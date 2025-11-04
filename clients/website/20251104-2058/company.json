@@ -1,0 +1,11 @@
+{
+  "name": "Musterfirma GmbH",
+  "email": "info@musterfirma.de",
+  "phone": "+49 123 456789",
+  "address": "Musterstraße 1, 12345 Musterstadt",
+  "domain": "musterfirma.de",
+  "social": {
+    "facebook": "https://facebook.com/musterfirma",
+    "linkedin": "https://linkedin.com/company/musterfirma"
+  }
+}
