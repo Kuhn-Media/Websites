@@ -1,0 +1,16 @@
+{
+  "companyName": "Ihr Handwerkspartner",
+  "geoFocus": "Ihrer Nähe",
+  "services": [
+    "Heizungsinstallation",
+    "Sanitärreparatur",
+    "Wartung"
+  ],
+  "phone": "+49 123 456789",
+  "email": "info@ihre-firma.de",
+  "whatsapp": "+49 123 456789",
+  "legalCompany": "Mustermann Handwerk GmbH",
+  "legalAddress": "Musterstraße 123, 12345 Musterstadt",
+  "legalConsentTool": "Consent Manager",
+  "openingHours": "Mo-Sa 7:30–19:30"
+}
