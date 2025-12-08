@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Heimlich Wolfsburg | Bio-Kaffee, Kuchen & Frühstück</title>
+    <meta name="description" content="Entdecke das Cafe Heimlich in Wolfsburg! Genieße täglich frische, hausgemachte Kuchen, Bio-Kaffeespezialitäten aus Kolumbien und leckeres Frühstück. Dein neuer Lieblingsort an der Steimker Promenade.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header class="km-header">
+        <div class="km-container km-header-container">
+            <a href="#" class="km-logo">
+                <img src="assets/logo/img-1351-1.png" alt="Cafe Heimlich Logo">
+            </a>
+            <nav class="km-nav">
+                <ul>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#menu_tabs">Speisekarte</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#location_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <a href="#location_contact" class="km-btn km-btn-primary km-header-cta">Tisch reservieren</a>
+            <button class="km-burger" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="km-section km-hero" id="hero">
+            <div class="km-container km-hero-grid">
+                <div class="km-hero-image reveal">
+                    <img src="assets/img/image.png" alt="Das Hauptbild für die Startseite. Soll die Atmosphäre und das Angebot des Cafés zeigen." loading="eager">
+                </div>
+                <div class="km-hero-content reveal">
+                    <h1>Dein geheimer Lieblingsort in Wolfsburg.</h1>
+                    <p class="km-subline">Entdecke hausgemachte Kuchen, Bio-Kaffee aus Kolumbien und eine Atmosphäre, die zum Verweilen einlädt. Willkommen im Cafe Heimlich an der Steimker Promenade.</p>
+                    <div class="km-hero-ctas">
+                        <a href="#menu_tabs" class="km-btn km-btn-primary">Speisekarte ansehen</a>
+                        <a href="#location_contact" class="km-btn km-btn-secondary">Tisch reservieren</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section km-usp-strip" id="usp_strip">
+            <div class="km-container">
+                <div class="km-grid-3">
+                    <div class="km-usp-item reveal">
+                        <div class="km-usp-icon">🍃</div>
+                        <h3>100% Bio-Zutaten</h3>
+                        <p>Wir verwenden ausschließlich frische Bio-Zutaten für den besten Geschmack und dein gutes Gefühl.</p>
+                    </div>
+                    <div class="km-usp-item reveal">
+                        <div class="km-usp-icon">🍰</div>
+                        <h3>Täglich frisch gebacken</h3>
+                        <p>Unsere Kuchen, Croissants und Snacks werden jeden Morgen mit Liebe in unserer eigenen Backstube zubereitet.</p>
+                    </div>
+                    <div class="km-usp-item reveal">
+                        <div class="km-usp-icon">☕</div>
+                        <h3>Kaffee aus Kolumbien</h3>
+                        <p>Unsere Bohnen stammen direkt von kleinen Farmen in Kolumbien – für ein reiches und faires Aroma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="about">
+            <div class="km-container km-grid-2-about">
+                <div class="km-about-content reveal">
+                    <h2>Mehr als nur ein Café – ein Wohnzimmer.</h2>
+                    <p>Das Cafe Heimlich ist unsere kleine Oase mitten in Wolfsburg. Ein Ort, an dem die Zeit ein bisschen langsamer vergeht und der Duft von frischem Kaffee in der Luft liegt. Wir wollten einen Raum schaffen, der sich wie ein zweites Zuhause anfühlt – gemütlich, ehrlich und immer für dich da.</p>
+                    <p>Bei uns findest du alles, was das Herz begehrt: von handgebrühtem Spezialitätenkaffee über vegane Leckereien bis hin zu herzhaften Snacks für die Mittagspause. Komm vorbei, wir freuen uns auf dich!</p>
+                </div>
+                <div class="km-about-image reveal">
+                    <img src="assets/img/image_3.png" alt="Einladendes Bild des Teams bei der Arbeit." loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section km-section-menu" id="menu_tabs">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Ein kleiner Vorgeschmack</h2>
+                </header>
+                <div class="km-tabs reveal">
+                    <div class="km-tab-buttons">
+                        <button class="km-tab-btn active" data-tab="tab_coffee">Kaffee & Getränke</button>
+                        <button class="km-tab-btn" data-tab="tab_breakfast">Frühstück & Snacks</button>
+                        <button class="km-tab-btn" data-tab="tab_cakes">Kuchen & Süßes</button>
+                    </div>
+                    <div class="km-tab-content active" id="tab_coffee">
+                        <p>Unser Herz schlägt für richtig guten Kaffee. Ob klassischer Espresso, cremiger Cappuccino oder unsere hausgemachten Limonaden – hier ist für jeden Durst etwas dabei.</p>
+                        <ul>
+                            <li>Espresso & Flat White</li>
+                            <li>Latte Macchiato (auch mit Hafer- oder Sojamilch)</li>
+                            <li>Chai Latte & Heiße Schokolade</li>
+                            <li>Hausgemachte Limonaden & Eistees</li>
+                        </ul>
+                    </div>
+                    <div class="km-tab-content" id="tab_breakfast">
+                        <p>Starte perfekt in den Tag oder stille den kleinen Hunger zwischendurch. Unsere Snacks sind frisch, lecker und machen einfach glücklich.</p>
+                        <ul>
+                            <li>Frische Croissants & Brötchen</li>
+                            <li>Belegte Bagels (z.B. mit Avocado oder Käse)</li>
+                            <li>Joghurt mit frischem Obst & Müsli</li>
+                            <li>Herzhafte Quiches und Tagessuppen</li>
+                        </ul>
+                    </div>
+                    <div class="km-tab-content" id="tab_cakes">
+                        <p>Unsere Kuchentheke ist unser ganzer Stolz. Täglich frisch gebacken, mit den besten Zutaten und ganz viel Liebe. Lass dich verführen!</p>
+                        <ul>
+                            <li>Klassischer Apfel- & Käsekuchen</li>
+                            <li>Saftige Schokoladentorte</li>
+                            <li>Vegane Muffins & Brownies</li>
+                            <li>Saisonale Torten-Specials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="reasons_to_visit">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Für jeden Anlass der richtige Ort</h2>
+                </header>
+                <div class="km-grid-3">
+                    <div class="km-card reveal">
+                        <h3>Dein Morgenritual</h3>
+                        <p>Starte mit dem besten Kaffee der Stadt und einem frischen Croissant in den Tag. Wir sind schon früh für dich da.</p>
+                    </div>
+                    <div class="km-card reveal">
+                        <h3>Die süße Auszeit</h3>
+                        <p>Gönn dir eine Pause vom Alltag bei einem Stück hausgemachtem Kuchen und einer Tasse Tee.</p>
+                    </div>
+                    <div class="km-card reveal">
+                        <h3>Arbeiten & Genießen</h3>
+                        <p>Bei uns findest du gemütliche Ecken, gutes WLAN und den nötigen Koffein-Nachschub für produktive Stunden.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="gallery">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Einblicke in unser Wohnzimmer</h2>
+                </header>
+                <div class="km-gallery-grid">
+                    <div class="km-gallery-item reveal"><img src="assets/img/image_1.png" alt="Visualisierung der Kaffeespezialitäten." loading="lazy"></div>
+                    <div class="km-gallery-item reveal"><img src="assets/img/image_2.png" alt="Zeigt das Frühstücksangebot des Cafés." loading="lazy"></div>
+                    <div class="km-gallery-item reveal"><img src="assets/img/image_4.png" alt="Außenansicht des Cafés, um die Lage zu verdeutlichen." loading="lazy"></div>
+                    <div class="km-gallery-item reveal"><img src="assets/img/image_5.png" alt="Detailaufnahme mit Branding, z.B. Kaffeebecher oder Kuchen." loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section km-section-contact" id="location_contact">
+            <div class="km-container km-grid-2-contact">
+                <div class="km-contact-info reveal">
+                    <h2>Komm vorbei oder reserviere deinen Lieblingstisch</h2>
+                    <p>Du findest uns direkt an der Steimker Promenade 2 in Wolfsburg. Für Reservierungen, besonders am Wochenende, nutze einfach unser Formular oder ruf uns an. Wir halten dir gerne einen Platz frei!</p>
+                    <div class="km-contact-details">
+                        <div class="km-opening-hours">
+                            <h3>Öffnungszeiten</h3>
+                            <p>Montag - Sonntag: 07:30 - 17:30 Uhr</p>
+                        </div>
+                        <div class="km-address">
+                            <h3>Kontakt</h3>
+                            <p>Steimker Promenade 2, 38446 Wolfsburg</p>
+                            <p><a href="tel:+4915755717195">+49 1575 5717195</a></p>
+                            <p><a href="mailto:paulsaitest@gmail.com">paulsaitest@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="km-contact-form reveal">
+                    <form>
+                        <div class="km-form-group">
+                            <input type="text" id="name" name="name" required placeholder="Name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="km-form-group">
+                            <input type="email" id="email" name="email" required placeholder="E-Mail">
+                            <label for="email">E-Mail</label>
+                        </div>
+                        <div class="km-form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder="Deine Nachricht (z.B. Reservierung für 2 Personen am Samstag um 10 Uhr)"></textarea>
+                            <label for="message">Deine Nachricht</label>
+                        </div>
+                        <button type="submit" class="km-btn km-btn-primary">Anfrage senden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="faq">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Häufig gestellte Fragen</h2>
+                </header>
+                <div class="km-faq-accordion">
+                    <div class="km-faq-item reveal">
+                        <button class="km-faq-question">
+                            <span>Kann ich bei euch einen Tisch reservieren?</span>
+                            <span class="km-faq-icon"></span>
+                        </button>
+                        <div class="km-faq-answer">
+                            <p>Ja, sehr gerne! Besonders für das Frühstück am Wochenende empfehlen wir eine Reservierung. Nutze dafür einfach unser Kontaktformular oder ruf uns kurz an. Für Gruppen ab 6 Personen melde dich bitte telefonisch.</p>
+                        </div>
+                    </div>
+                    <div class="km-faq-item reveal">
+                        <button class="km-faq-question">
+                            <span>Bietet ihr auch vegane oder laktosefreie Optionen an?</span>
+                            <span class="km-faq-icon"></span>
+                        </button>
+                        <div class="km-faq-answer">
+                            <p>Auf jeden Fall! Wir haben standardmäßig Hafer-, Soja- und Mandelmilch für unsere Kaffeespezialitäten. Außerdem findest du bei uns immer vegane Kuchen, Snacks und oft auch vegane Gerichte auf der Tageskarte. Sprich uns einfach an!</p>
+                        </div>
+                    </div>
+                    <div class="km-faq-item reveal">
+                        <button class="km-faq-question">
+                            <span>Gibt es bei euch WLAN zum Arbeiten?</span>
+                            <span class="km-faq-icon"></span>
+                        </button>
+                        <div class="km-faq-answer">
+                            <p>Ja, wir haben kostenloses und stabiles WLAN für unsere Gäste. Such dir eine gemütliche Ecke und sei produktiv. Wir versorgen dich dabei gerne mit Kaffee und Energie.</p>
+                        </div>
+                    </div>
+                     <div class="km-faq-item reveal">
+                        <button class="km-faq-question">
+                            <span>Kann ich eure Kuchen auch zum Mitnehmen bestellen?</span>
+                            <span class="km-faq-icon"></span>
+                        </button>
+                        <div class="km-faq-answer">
+                            <p>Selbstverständlich! Alle unsere Kuchen und auch unsere Kaffeespezialitäten gibt es auch zum Mitnehmen. Wenn du einen ganzen Kuchen bestellen möchtest, gib uns bitte 1-2 Tage vorher Bescheid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="km-footer">
+        <div class="km-container">
+            <div class="km-footer-grid">
+                <div class="km-footer-brand">
+                    <a href="#" class="km-logo">
+                        <img src="assets/logo/img-1351-1.png" alt="Cafe Heimlich Logo">
+                    </a>
+                    <p>Dein geheimer Lieblingsort in Wolfsburg.</p>
+                </div>
+                <div class="km-footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#menu_tabs">Speisekarte</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#location_contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="km-footer-contact">
+                    <h3>Kontakt</h3>
+                    <p>Steimker Promenade 2, 38446 Wolfsburg</p>
+                    <p><a href="tel:+4915755717195">+49 1575 5717195</a></p>
+                    <p><a href="mailto:paulsaitest@gmail.com">paulsaitest@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="km-footer-bottom">
+                <p>&copy; 2024 Cafe Heimlich. Alle Rechte vorbehalten.</p>
+                <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="km-lightbox">
+        <button class="km-lightbox-close" aria-label="Schließen">×</button>
+        <img class="km-lightbox-image" src="" alt="">
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
