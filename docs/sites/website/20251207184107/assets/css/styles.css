@@ -624,7 +624,7 @@ img {
         bottom: 0;
         width: 100%;
         max-width: 300px;
-        background-color: var(--km-color-background); /* Solid background for mobile nav */
+        background-color: #FFFFFF; /* Ensure solid white background for mobile nav */
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
