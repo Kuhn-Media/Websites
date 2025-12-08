@@ -1,6 +1,6 @@
-/*---------------------------------*\
-    /*          VARIABLES          */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        VARIABLES         */
+/*------------------------------------------*/
     :root {
         --color-primary: #f97316;
         --color-primary-darker: #ea580c; /* Added for gradient */
@@ -36,9 +36,9 @@
         --header-height: 80px;
     }
 
-    /*---------------------------------*\
-    /*          GLOBAL STYLES          */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        GLOBAL STYLES         */
+/*------------------------------------------*/
     *, *::before, *::after {
         box-sizing: border-box;
         margin: 0;
@@ -92,9 +92,9 @@
         border-width: 0;
     }
 
-    /*---------------------------------*\
-    /*          UTILITIES          */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        UTILITIES         */
+/*------------------------------------------*/
     .km-container {
         max-width: 1200px;
         margin-left: auto;
@@ -146,9 +146,9 @@
         .km-grid--4-cols { grid-template-columns: repeat(2, 1fr); }
     }
 
-    /*---------------------------------*\
-    /*          COMPONENTS          */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        COMPONENTS         */
+/*------------------------------------------*/
 
     /* Buttons */
     .km-btn {
@@ -248,9 +248,9 @@
         transform: translateY(0);
     }
 
-    /*---------------------------------*\
-    /*          HEADER & NAV          */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        HEADER & NAV         */
+/*------------------------------------------*/
     .km-header {
         position: sticky;
         top: 0;
@@ -354,9 +354,9 @@
         .km-nav__cta { font-size: 1.25rem; }
     }
 
-    /*---------------------------------*\
-    /*              HERO               */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*                HERO                  */
+/*------------------------------------------*/
     .km-hero { background-color: #fff; }
     .km-hero h1 { margin-bottom: 1rem; }
     .km-hero__subheadline { font-size: var(--font-body); margin-bottom: 2rem; }
@@ -379,15 +379,15 @@
         }
     }
 
-    /*---------------------------------*\
-    /*              LOGOS              */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*                LOGOS                 */
+/*------------------------------------------*/
     .km-logos { padding-top: 2rem; padding-bottom: 2rem; }
     .km-logos__headline { font-size: var(--font-small); text-align: center; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 
-    /*---------------------------------*\
-    /*          SERVICES (TABS)        */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*        SERVICES (TABS)         */
+/*------------------------------------------*/
     .km-tabs__nav {
         display: flex;
         flex-wrap: wrap;
@@ -437,9 +437,9 @@
         }
     }
 
-    /*---------------------------------*\
-    /*              PROCESS            */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*                PROCESS               */
+/*------------------------------------------*/
     .km-process__wrapper { position: relative; }
     .km-process__line {
         position: absolute;
@@ -485,9 +485,9 @@
         .km-process__step:not(:last-child) { margin-bottom: 2rem; }
     }
 
-    /*---------------------------------*\
-    /*          TESTIMONIALS           */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*            TESTIMONIALS            */
+/*------------------------------------------*/
     .km-carousel {
         position: relative;
     }
@@ -546,9 +546,9 @@
         color: var(--color-text-on-primary);
     }
 
-    /*---------------------------------*\
-    /*              FAQ                */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*                FAQ                   */
+/*------------------------------------------*/
     .km-faq__list { max-width: 700px; margin: 0 auto; }
     .km-faq__item {
         border-bottom: 1px solid var(--color-border-light);
@@ -579,7 +579,7 @@
     }
 
     .km-faq__question[aria-expanded="true"]::after {
-        content: '–';
+        content: '\\2013';
         transform: rotate(180deg);
     }
 
@@ -588,9 +588,9 @@
         max-width: 65ch;
     }
 
-    /*---------------------------------*\
-    /*          CTA BAND             */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*              CTA BAND                */
+/*------------------------------------------*/
     .km-cta-band {
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-darker));
         color: var(--color-text-on-primary);
@@ -623,11 +623,11 @@
         object-fit: cover;
     }
 
-    /*---------------------------------*\
-    /*              FOOTER             */
-    /*---------------------------------*/
+/*------------------------------------------*\\
+    /*                FOOTER                */
+/*------------------------------------------*/
     .km-footer {
-        background-color: var(--color-accent);
+        background-color: var(--color-text-dark);
         color: var(--color-text-light-on-dark);
         padding: 4rem 0 2rem;
     }
@@ -654,4 +654,3 @@
         color: var(--color-accent-alt);
         opacity: 0.8;
     }
-    
