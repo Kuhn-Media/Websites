@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Kunterbunt | Dein gemütliches Café in Wolfsburg</title>
+    <meta name="description" content="Entdecke Spezialitätenkaffee, hausgemachte Kuchen und leckeres Frühstück im Cafe Kunterbunt in Wolfsburg. Dein neuer Lieblingsplatz an der Steimker Promenade.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header class="km-header">
+        <div class="km-container km-header-container">
+            <a href="#" class="km-logo">Cafe Kunterbunt</a>
+            <nav class="km-nav-desktop">
+                <ul>
+                    <li><a href="#usp_grid">Besonders</a></li>
+                    <li><a href="#offer_groups">Karte</a></li>
+                    <li><a href="#gallery_mood">Atmosphäre</a></li>
+                    <li><a href="#about_intro">Über uns</a></li>
+                </ul>
+            </nav>
+            <a href="#contact_map" class="km-btn km-btn-primary km-header-cta">Besuch uns</a>
+            <button class="km-nav-toggle" aria-label="Menü öffnen">
+                <span class="km-nav-toggle-bar"></span>
+                <span class="km-nav-toggle-bar"></span>
+                <span class="km-nav-toggle-bar"></span>
+            </button>
+        </div>
+        <nav class="km-nav-mobile">
+            <ul>
+                <li><a href="#usp_grid">Besonders</a></li>
+                <li><a href="#offer_groups">Karte</a></li>
+                <li><a href="#gallery_mood">Atmosphäre</a></li>
+                <li><a href="#about_intro">Über uns</a></li>
+                <li><a href="#contact_map">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="km-section km-hero" id="hero">
+            <div class="km-container km-hero-grid">
+                <div class="km-hero-content reveal">
+                    <h1>Farbe für deinen Tag.</h1>
+                    <p class="km-subline">Willkommen im Cafe Kunterbunt! Dein neuer Lieblingsplatz für Spezialitätenkaffee, hausgemachte Kuchen und eine bunte Auszeit an der Steimker Promenade in Wolfsburg.</p>
+                    <p>Bei uns ist jeder Tag ein bisschen bunter. Ob für den ersten Kaffee am Morgen, eine süße Pause am Nachmittag oder ein leckeres Frühstück mit Freunden – wir freuen uns auf dich!</p>
+                    <div class="km-hero-actions">
+                        <a href="#offer_groups" class="km-btn km-btn-primary">Unsere Karte entdecken</a>
+                        <a href="#contact_map" class="km-btn km-btn-secondary">So findest du uns</a>
+                    </div>
+                </div>
+                <div class="km-hero-image-wrapper reveal">
+                    <div class="km-hero-image-placeholder">
+                        <!-- Image from manifest 'hero_main' would go here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="usp_grid">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Was uns besonders macht</h2>
+                </header>
+                <div class="km-grid km-grid-4">
+                    <div class="km-card km-feature-card reveal">
+                        <div class="km-feature-icon">☕️</div>
+                        <h3>Bester Spezialitätenkaffee</h3>
+                        <p>Von klassischem Espresso bis zum cremigen Flat White – mit Liebe von unseren Baristas zubereitet.</p>
+                    </div>
+                    <div class="km-card km-feature-card reveal">
+                        <div class="km-feature-icon">🍰</div>
+                        <h3>Hausgemachte Kuchen</h3>
+                        <p>Täglich frisch gebacken und mit einer großen Portion Leidenschaft. Probiere unsere Klassiker und saisonalen Highlights.</p>
+                    </div>
+                    <div class="km-card km-feature-card reveal">
+                        <div class="km-feature-icon">🥐</div>
+                        <h3>Frühstück & Snacks</h3>
+                        <p>Starte perfekt in den Tag mit unseren belegten Bagels, frischen Croissants oder leichten Snacks für zwischendurch.</p>
+                    </div>
+                    <div class="km-card km-feature-card reveal">
+                        <div class="km-feature-icon">🌿</div>
+                        <h3>Vegane Vielfalt</h3>
+                        <p>Wir haben immer eine Auswahl an leckeren veganen Kuchen, Snacks und natürlich Pflanzenmilch für deinen Kaffee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section km-section-menu" id="offer_groups">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Ein kleiner Vorgeschmack</h2>
+                    <p class="km-subline">Alles, was das Herz begehrt. Frisch, hausgemacht und einfach lecker.</p>
+                </header>
+                <div class="km-menu-filters reveal">
+                    <button class="km-menu-filter active" data-category="group_coffee">Kaffee & Co.</button>
+                    <button class="km-menu-filter" data-category="group_breakfast">Frühstück & Snacks</button>
+                    <button class="km-menu-filter" data-category="group_cakes">Kuchen & Süßes</button>
+                </div>
+                <div class="km-grid km-grid-3 km-menu-grid reveal">
+                    <div class="km-card km-menu-item" data-category="group_coffee">
+                        <h4>Flat White</h4>
+                        <p>Intensiver Espresso trifft auf samtig-cremigen Milchschaum. Perfekt für Kenner.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_coffee">
+                        <h4>Chai Latte</h4>
+                        <p>Eine würzige Umarmung aus Schwarztee, exotischen Gewürzen und aufgeschäumter Milch.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_coffee">
+                        <h4>Hausgemachte Limonade</h4>
+                        <p>Erfrischend und fruchtig – unsere saisonal wechselnden Sorten sind der perfekte Durstlöscher.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_breakfast">
+                        <h4>Belegter Bagel</h4>
+                        <p>Wahlweise mit Frischkäse, Avocado oder Schinken – der ideale Start in den Tag.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_breakfast">
+                        <h4>Joghurt mit Müsli & Obst</h4>
+                        <p>Eine leichte und gesunde Option mit knusprigem Granola und frischen Früchten der Saison.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_breakfast">
+                        <h4>Warme Quiche</h4>
+                        <p>Unsere herzhafte Quiche nach Tagesangebot ist der perfekte Snack für die Mittagspause.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_cakes">
+                        <h4>Klassischer Käsekuchen</h4>
+                        <p>Cremig, frisch und einfach unwiderstehlich. Gebacken nach unserem Hausrezept.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_cakes">
+                        <h4>Schokoladen-Brownie</h4>
+                        <p>Extra saftig, super schokoladig und auf Wunsch mit einem Klecks Sahne serviert.</p>
+                    </div>
+                    <div class="km-card km-menu-item" data-category="group_cakes">
+                        <h4>Muffins & Cookies</h4>
+                        <p>Die perfekte kleine Sünde zum Kaffee. Frag nach unseren täglich wechselnden Sorten.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="gallery_mood">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Ein Ort zum Wohlfühlen</h2>
+                    <p class="km-subline">Bunt, gemütlich und immer mit einem Lächeln. Mach dir selbst ein Bild von unserer Atmosphäre.</p>
+                </header>
+                <div class="km-gallery-masonry reveal">
+                     <!-- Images from manifest 'gallery_mood' would go here -->
+                     <div class="km-gallery-placeholder-info">Eine Bildergalerie wird hier in Kürze erscheinen.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="about_intro">
+            <div class="km-container km-grid km-grid-2 km-grid-middle">
+                <div class="km-about-image-wrapper reveal">
+                     <div class="km-about-image-placeholder">
+                        <!-- Image from manifest 'about_intro' would go here -->
+                    </div>
+                </div>
+                <div class="km-about-content reveal">
+                    <p class="km-subline">Oder besser: das Team dahinter.</p>
+                    <h2>Hallo, hier ist Fräulein Kunterbunt!</h2>
+                    <p>Wir lieben, was wir tun: guten Kaffee, ehrliches Handwerk und eine Atmosphäre, in der sich jeder wohlfühlt. Das Cafe Kunterbunt ist unser wahr gewordener Traum von einem Ort, der Menschen zusammenbringt und den Alltag für einen Moment bunter macht. Jeder Kuchen wird bei uns selbst gebacken, jeder Kaffee mit Sorgfalt zubereitet. Wir freuen uns, dich bei uns begrüßen zu dürfen!</p>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="km-btn km-btn-secondary">Folge uns auf Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section km-section-testimonials" id="social_proof_testimonials">
+            <div class="km-container">
+                <header class="km-section-header reveal">
+                    <h2>Was unsere Gäste sagen</h2>
+                </header>
+                <div class="km-carousel reveal">
+                    <div class="km-carousel-track">
+                        <div class="km-carousel-slide">
+                            <div class="km-testimonial-card">
+                                <blockquote>
+                                    <p>"Endlich ein Café in Wolfsburg, das nicht nur tollen Kaffee hat, sondern auch eine super gemütliche und stylische Atmosphäre. Der Käsekuchen ist ein Traum!"</p>
+                                    <footer>- Laura M., <cite>Google Bewertung</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="km-carousel-slide">
+                            <div class="km-testimonial-card">
+                                <blockquote>
+                                    <p>"Mein absoluter Lieblingsort für die Mittagspause. Die Bagels sind super lecker und das Team ist immer unglaublich freundlich und gut gelaunt. Macht weiter so!"</p>
+                                    <footer>- Jonas K., <cite>Ein Stammgast</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="km-carousel-slide">
+                            <div class="km-testimonial-card">
+                                <blockquote>
+                                    <p>"Super Auswahl, auch für Veganer. Die hausgemachte Limo war der Hammer und der vegane Brownie einfach perfekt. Komme definitiv wieder!"</p>
+                                    <footer>- Sophie B., <cite>Google Bewertung</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="km-carousel-nav">
+                        <button class="km-carousel-prev" aria-label="Vorheriges Testimonial">‹</button>
+                        <button class="km-carousel-next" aria-label="Nächstes Testimonial">›</button>
+                    </div>
+                    <div class="km-carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="km-section" id="contact_map">
+            <div class="km-container km-grid km-grid-2 km-grid-middle">
+                <div class="km-contact-details reveal">
+                    <h2>Komm vorbei!</h2>
+                    <p>Du findest uns im Herzen von Wolfsburg an der Steimker Promenade. Wir haben täglich für dich geöffnet und freuen uns auf deinen Besuch.</p>
+                    <ul>
+                        <li><strong>Adresse:</strong><br> Steimker Promenade 2, 38446 Wolfsburg</li>
+                        <li><strong>Öffnungszeiten:</strong><br> Täglich: 07:30 – 17:30 Uhr</li>
+                        <li><strong>Kontakt:</strong><br> <a href="mailto:hallo@cafe-kunterbunt-wob.de">hallo@cafe-kunterbunt-wob.de</a><br><a href="tel:+4915755717195">+49 1575 5717195</a></li>
+                    </ul>
+                </div>
+                <div class="km-map-wrapper reveal">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=52.4183,10.7968&hl=es;z=14&amp;output=embed"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="km-footer">
+        <div class="km-container">
+            <div class="km-footer-content">
+                <p>&copy; 2024 Cafe Kunterbunt. Alle Rechte vorbehalten.</p>
+                <nav>
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
