@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Reservierung | Waldschnitzel Ausflugslokal</title>
+    <meta name="description" content="Reservieren Sie Ihren Tisch im Waldschnitzel oder finden Sie uns. Alle Informationen zu Anfahrt und Öffnungszeiten unseres Restaurants bei Hamburg.">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="/" class="logo">Waldschnitzel</a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="/">Start</a></li>
+                    <li><a href="/speisekarte/">Speisekarte</a></li>
+                    <li><a href="/ueber-uns/">Über uns</a></li>
+                    <li><a href="/kontakt/" class="active">Kontakt</a></li>
+                    <li><a href="/kontakt/" class="btn btn-primary">Reservieren</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" id="burger-menu" aria-label="Menü öffnen/schließen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero page-hero">
+             <img src="assets/img/contact_map_placeholder.webp" alt="Waldweg zum Restaurant Waldschnitzel in Hamburg-Bergedorf." class="hero-bg">
+            <div class="container">
+                <h1>Wir freuen uns auf Sie</h1>
+                <p>Finden Sie den Weg zu uns oder reservieren Sie direkt Ihren Tisch für ein unvergessliches Schnitzel-Erlebnis.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-details-grid">
+                    <div class="contact-card">
+                        <h3>Adresse</h3>
+                        <p>Waldschnitzel GmbH</p>
+                        <p>Am Forsthaus 1</p>
+                        <p>21029 Hamburg (Bergedorf)</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Mo - Di: Ruhetag</p>
+                        <p>Mi - Sa: 17:00 – 22:00 Uhr</p>
+                        <p>So & Feiertage: 12:00 – 21:00 Uhr</p>
+                        <p><small>Bitte beachten Sie, dass dies vorläufige Öffnungszeiten sind.</small></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Kontakt</h3>
+                        <p>Telefon: [Telefonnummer eintragen]</p>
+                        <p>E-Mail: [E-Mail-Adresse eintragen]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section special-section">
+            <div class="container" style="max-width: 800px;">
+                <div class="reservation-form" style="text-align: center;">
+                    <h2>Tisch reservieren</h2>
+                    <p>Füllen Sie einfach das Formular aus. Wir bestätigen Ihre Anfrage so schnell wie möglich per E-Mail oder telefonisch.</p>
+                </div>
+                <form style="margin-top: 2rem;">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="date">Datum</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Uhrzeit</label>
+                            <input type="time" id="time" name="time" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                         <div class="form-group">
+                            <label for="guests">Anzahl Personen</label>
+                            <input type="number" id="guests" name="guests" class="form-control" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">E-Mail oder Telefon</label>
+                        <input type="text" id="contact" name="contact" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Anmerkungen (z.B. Kinderstuhl, Allergien)</label>
+                        <textarea id="notes" name="notes" rows="4" class="form-control"></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary">Anfrage senden</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-address">Waldschnitzel | Am Forsthaus 1 | 21029 Hamburg</p>
+            <div class="footer-links">
+                <a href="/impressum/">Impressum</a>
+                <a href="/datenschutz/">Datenschutz</a>
+            </div>
+            <p class="copyright">© 2024 Waldschnitzel GmbH</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
