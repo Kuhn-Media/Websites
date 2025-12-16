@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Anfahrt | Naturheilpraxis am Bach in Winterthur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="logo">
+        <span class="logo__icon">🌿</span>
+        <span class="logo__text">Naturheilpraxis<br><small>am Bach</small></span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Startseite</a></li>
+          <li><a href="../leistungen/index.html" class="nav-link">Leistungen</a></li>
+          <li><a href="../ueber-mich/index.html" class="nav-link">Über mich</a></li>
+          <li><a href="index.html" class="nav-link is-active" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle"><span class="hamburger"></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--centered">
+      <div class="container">
+        <span class="kicker">Kontakt</span>
+        <h1 class="hero__title">Nehmen Sie Kontakt auf</h1>
+        <p class="hero__text">Ich freue mich darauf, von Ihnen zu hören und Sie auf Ihrem Weg zu begleiten.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--split-lg">
+          <div class="contact-info">
+            <div class="glass-card mb-md">
+              <h2 class="h3">Praxisinformationen</h2>
+              <address class="contact-address">
+                <strong>Naturheilpraxis am Bach</strong><br>
+                Claudia Muster<br>
+                Musterstrasse 1<br>
+                8400 Winterthur<br>
+                Schweiz
+              </address>
+              <div class="contact-methods mt-md">
+                <p><strong>Telefon:</strong> <a href="tel:0521234567">052 123 45 67</a></p>
+                <p><strong>E-Mail:</strong> <a href="mailto:info@naturheilpraxis-am-bach.ch">info@naturheilpraxis-am-bach.ch</a></p>
+              </div>
+              <div class="opening-hours mt-md">
+                <strong>Öffnungszeiten</strong><br>
+                Montag - Freitag: 09:00 - 18:00 Uhr<br>
+                <small>Termine nur nach Vereinbarung.</small>
+              </div>
+            </div>
+            <div class="map-placeholder">
+              <p>Karte: Musterstrasse 1, 8400 Winterthur</p>
+              <small>(Hier würde die Google Maps Karte eingebunden werden)</small>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper" id="kontaktformular">
+            <div class="glass-card">
+              <h2 class="h3 mb-md">Schreiben Sie mir Ihr Anliegen</h2>
+              <form class="form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Ihr Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Ihre E-Mail-Adresse *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Ihre Telefonnummer (optional)</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="message">Worin kann ich Sie unterstützen? *</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Nachricht sicher senden</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+       <p class="text-center">&copy; 2025 Naturheilpraxis am Bach.</p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
