@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt & Anfahrt | Zahnarzt Dr. Muster Musterstadt</title>
+<meta name="description" content="Kontaktieren Sie die Zahnarztpraxis Dr. Muster in Musterstadt. Hier finden Sie Adresse, Telefonnummer, Öffnungszeiten und eine Anfahrtskarte.">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script src="../assets/js/main.js" defer></script>
+<style>
+.km-form { display: flex; flex-direction: column; gap: 20px; }
+.km-form__group { display: flex; flex-direction: column; gap: 8px; }
+.km-form__label { font-weight: 600; font-size: 0.9rem; }
+.km-form__input, .km-form__textarea { padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; }
+.km-form__textarea { resize: vertical; min-height: 120px; }
+</style>
+</head>
+<body>
+<header class="km-header">
+<div class="km-container km-header__inner">
+<a href="../" class="km-brand">Dr. Muster & Kollegen</a>
+<button class="km-nav-toggle" aria-label="Menü öffnen">
+<span class="km-nav-toggle__bar"></span>
+<span class="km-nav-toggle__bar"></span>
+<span class="km-nav-toggle__bar"></span>
+</button>
+<nav class="km-nav">
+<ul class="km-nav__list">
+<li><a href="../" class="km-nav__link">Startseite</a></li>
+<li><a href="../leistungen/" class="km-nav__link">Leistungen</a></li>
+<li><a href="../praxis/" class="km-nav__link">Praxis</a></li>
+<li><a href="./" class="km-nav__link is-active">Kontakt</a></li>
+</ul>
+<a href="tel:0123456789" class="km-btn km-btn--primary km-nav__cta">Termin vereinbaren</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="km-hero">
+<div class="km-container km-text-center reveal">
+<span class="km-eyebrow">Kontakt & Anfahrt</span>
+<h1 class="km-h1">Wir sind für Sie da.</h1>
+<p class="km-subline">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Kontaktieren Sie uns gerne telefonisch, per E-Mail oder über unser Kontaktformular.</p>
+<div class="km-cta-group">
+<a href="tel:0123456789" class="km-btn km-btn--primary">0123 456789</a>
+<a href="mailto:info@zahnarzt-muster-stadt.de" class="km-btn km-btn--secondary">info@zahnarzt-muster-stadt.de</a>
+</div>
+</div>
+</section>
+
+<section class="km-section km-section--light">
+<div class="km-container">
+<div class="km-grid-3" style="grid-template-columns: 1fr 1fr;">
+<div class="km-card reveal">
+<h2 class="km-h2">Schreiben Sie uns</h2>
+<form class="km-form">
+<div class="km-form__group">
+<label class="km-form__label" for="name">Ihr Name *</label>
+<input class="km-form__input" type="text" id="name" required>
+</div>
+<div class="km-form__group">
+<label class="km-form__label" for="email">Ihre E-Mail *</label>
+<input class="km-form__input" type="email" id="email" required>
+</div>
+<div class="km-form__group">
+<label class="km-form__label" for="phone">Ihre Telefonnummer</label>
+<input class="km-form__input" type="tel" id="phone">
+</div>
+<div class="km-form__group">
+<label class="km-form__label" for="message">Ihre Nachricht *</label>
+<textarea class="km-form__textarea" id="message" required></textarea>
+</div>
+<button type="submit" class="km-btn km-btn--primary">Nachricht senden</button>
+</form>
+</div>
+<div class="km-card reveal delay-1">
+<h2 class="km-h2">Besuchen Sie uns</h2>
+<p><strong>Zahnarztpraxis Dr. Muster & Kollegen</strong><br>
+Musterstraße 1<br>
+12345 Musterstadt<br>
+Deutschland</p>
+<div style="margin-top: 40px;">
+<h3 class="km-h3">Unsere Sprechzeiten</h3>
+<ul style="list-style: none; margin-top: 16px;">
+<li style="margin-bottom: 8px; display: flex; justify-content: space-between;"><span>Montag</span> <span>08:00 - 18:00 Uhr</span></li>
+<li style="margin-bottom: 8px; display: flex; justify-content: space-between;"><span>Dienstag</span> <span>08:00 - 18:00 Uhr</span></li>
+<li style="margin-bottom: 8px; display: flex; justify-content: space-between;"><span>Mittwoch</span> <span>08:00 - 14:00 Uhr</span></li>
+<li style="margin-bottom: 8px; display: flex; justify-content: space-between;"><span>Donnerstag</span> <span>08:00 - 18:00 Uhr</span></li>
+<li style="margin-bottom: 8px; display: flex; justify-content: space-between;"><span>Freitag</span> <span>08:00 - 13:00 Uhr</span></li>
+</ul>
+<p style="margin-top: 16px; font-size: 0.9rem; color: #64748B;">Weitere Termine nach Vereinbarung.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="km-footer">
+<div class="km-container">
+<div class="km-footer__bottom">
+<p>&copy; 2025 Zahnarztpraxis Dr. Muster & Kollegen.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
