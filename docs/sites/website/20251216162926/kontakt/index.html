@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Anfahrt | Zahnarztpraxis Dr. Freytag Berlin</title>
+    <meta name="description" content="Kontaktieren Sie uns für Ihren Termin. Hier finden Sie Telefon, E-Mail, Adresse und Öffnungszeiten unserer Zahnarztpraxis in Berlin.">
+    <meta property="og:title" content="Kontakt & Anfahrt | Zahnarztpraxis Dr. Freytag Berlin">
+    <meta property="og:description" content="Kontaktieren Sie uns für Ihren Termin. Hier finden Sie Telefon, E-Mail, Adresse und Öffnungszeiten unserer Zahnarztpraxis in Berlin.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="km-skip-link">Zum Hauptinhalt springen</a>
+    <header class="km-header">
+        <div class="km-container km-header__inner">
+            <a href="../" class="km-header__logo">Dr. Freytag</a>
+            <nav class="km-header__nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="../">Startseite</a></li>
+                    <li><a href="../leistungen/">Leistungen</a></li>
+                    <li><a href="../ueber-uns/">Über Uns</a></li>
+                    <li><a href="./" class="is-active">Kontakt</a></li>
+                </ul>
+            </nav>
+            <a href="./" class="km-button is-primary km-header__cta">Termin vereinbaren</a>
+            <button class="km-header__mobile-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="km-hero is-simple">
+            <div class="km-container reveal">
+                <span class="km-kicker">Kontakt & Terminvereinbarung</span>
+                <h1 class="km-h1">Wir sind für Sie da.</h1>
+                <p class="km-hero__subheadline">Ob für eine Kontrolluntersuchung, eine Beratung oder bei konkreten Beschwerden – vereinbaren Sie jetzt unkompliziert Ihren Termin.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="km-section">
+            <div class="km-container">
+                <div class="km-split-layout">
+                    <div class="km-split-layout__text reveal">
+                        <h2 class="km-h2">Schreiben Sie uns oder rufen Sie an</h2>
+                        <p>Unser Praxisteam kümmert sich schnellstmöglich um Ihr Anliegen. Wir freuen uns darauf, von Ihnen zu hören.</p>
+                        <div class="km-contact-cards">
+                            <div class="km-contact-card">
+                                <span class="km-contact-card__label">Telefon</span>
+                                <a href="tel:0049301234567" class="km-contact-card__value">030 1234567</a>
+                            </div>
+                            <div class="km-contact-card">
+                                <span class="km-contact-card__label">E-Mail</span>
+                                <a href="mailto:praxis@freytag-zahnarzt-berlin.de" class="km-contact-card__value">praxis@freytag-zahnarzt-berlin.de</a>
+                            </div>
+                            <div class="km-contact-card">
+                                <span class="km-contact-card__label">Adresse</span>
+                                <p class="km-contact-card__value">Musterstraße 1, 10115 Berlin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="km-split-layout__content reveal" style="--reveal-delay: 150ms;">
+                        <form class="km-form" onsubmit="event.preventDefault(); alert('Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt. Wir werden uns in Kürze bei Ihnen melden.');">
+                            <div class="km-form__group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="km-form__group">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                             <div class="km-form__group">
+                                <label for="phone">Telefon (optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="km-form__group">
+                                <label for="message">Ihre Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="km-form__group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy" class="is-checkbox">Ich stimme der <a href="../datenschutz/">Datenschutzerklärung</a> zu.</label>
+                            </div>
+                            <button type="submit" class="km-button is-primary is-fullwidth">Anfrage senden</button>
+                            <p class="km-microcopy">Ihre Daten werden selbstverständlich vertraulich behandelt.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="km-section has-bg-surface">
+            <div class="km-container">
+                <div class="km-section-header reveal">
+                    <h2 class="km-h2">So finden Sie uns in Berlin</h2>
+                    <p>Unsere Praxis ist zentral gelegen und sowohl mit öffentlichen Verkehrsmitteln als auch mit dem Auto gut zu erreichen.</p>
+                </div>
+                <div class="km-map-container reveal">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.907932359518!2d13.3888593157209!3d52.51627497981395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851dff6a349d3%3A0x42120465a5853244!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1678886 Brandenburg Gate as a placeholder" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: var(--km-radius-lg);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="km-footer">
+        <div class="km-container">
+            <div class="km-footer__main">
+                <div class="km-footer__brand">
+                    <h3 class="km-h3">Dr. Freytag</h3>
+                    <p>Zahnarztpraxis in Berlin</p>
+                    <p>Musterstraße 1, 10115 Berlin</p>
+                </div>
+                <div class="km-footer__links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../">Startseite</a></li>
+                        <li><a href="../leistungen/">Leistungen</a></li>
+                        <li><a href="../ueber-uns/">Über Uns</a></li>
+                        <li><a href="./">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="km-footer__links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="../impressum/">Impressum</a></li>
+                        <li><a href="../datenschutz/">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="km-footer__contact">
+                    <h4>Kontakt</h4>
+                    <p><a href="tel:0049301234567">030 1234567</a></p>
+                    <p><a href="mailto:praxis@freytag-zahnarzt-berlin.de">praxis@freytag-zahnarzt-berlin.de</a></p>
+                </div>
+            </div>
+            <div class="km-footer__bottom">
+                <p>&copy; 2024 Zahnarztpraxis Dr. Freytag. Alle Rechte vorbehalten. Erstellt von Kuhn Media.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="km-mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <nav>
+            <ul>
+                <li><a href="../">Startseite</a></li>
+                <li><a href="../leistungen/">Leistungen</a></li>
+                <li><a href="../ueber-uns/">Über Uns</a></li>
+                <li><a href="./">Kontakt</a></li>
+            </ul>
+        </nav>
+        <a href="./" class="km-button is-primary">Termin vereinbaren</a>
+    </div>
+</body>
+</html>
