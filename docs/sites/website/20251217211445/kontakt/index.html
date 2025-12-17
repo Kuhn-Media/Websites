@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Praxis Dr. Weber</title>
+  <base href="../">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Dr. Weber <span class="text-accent">.</span></a>
+      <nav class="nav">
+        <a href="index.html">Startseite</a>
+        <a href="leistungen/index.html">Leistungen</a>
+        <a href="ueber-uns/index.html">Praxis & Team</a>
+        <a href="kontakt/index.html" class="active">Termin buchen</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-small">
+      <div class="container">
+        <h1 class="reveal">Wir sind für Sie da</h1>
+        <p class="reveal">Vereinbaren Sie Ihren Wunschtermin einfach online oder telefonisch.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="grid-2">
+          <div class="contact-info reveal">
+            <h2>Kontaktdaten</h2>
+            <div class="info-block">
+              <h3>Anschrift</h3>
+              <p>Zahnarztpraxis Dr. Weber<br>Musterstraße 1<br>38440 Wolfsburg</p>
+            </div>
+            <div class="info-block">
+              <h3>Kommunikation</h3>
+              <p>Telefon: <a href="tel:+49536100000">05361 / 123 456</a><br>
+              E-Mail: <a href="mailto:info@praxis-weber.de">info@praxis-weber.de</a></p>
+            </div>
+            <div class="info-block">
+              <h3>Sprechzeiten</h3>
+              <p>Mo - Do: 08:00 - 18:00 Uhr<br>
+              Fr: 08:00 - 14:00 Uhr<br>
+              Termine nach Vereinbarung</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form">
+              <h3>Nachricht senden</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="privacy" required>
+                <label for="privacy">Ich stimme der Datenschutzerklärung zu.</label>
+              </div>
+              <button type="submit" class="btn-primary">Absenden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">Dr. Weber .</a>
+          <p>Ihre Premium Zahnarztpraxis.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="leistungen/index.html">Leistungen</a></li>
+            <li><a href="ueber-uns/index.html">Praxis</a></li>
+            <li><a href="kontakt/index.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum/index.html">Impressum</a></li>
+            <li><a href="datenschutz/index.html">Datenschutz</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <p>Musterstraße 1<br>38440 Wolfsburg</p>
+          <p><a href="mailto:info@praxis-weber.de">info@praxis-weber.de</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Praxis Dr. Weber.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
