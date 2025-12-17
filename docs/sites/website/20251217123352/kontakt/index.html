@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Zahnarzt Bernhard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">Zahnarzt <span class="text-primary">Bernhard</span></span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="../leistungen/index.html">Leistungen</a></li>
+                    <li><a href="../ueber-uns/index.html">Über uns</a></li>
+                    <li><a href="index.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="index.html" class="btn btn-primary">Termin vereinbaren</a>
+                <button class="mobile-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Startseite</a></li>
+                <li><a href="../leistungen/index.html">Leistungen</a></li>
+                <li><a href="../ueber-uns/index.html">Über uns</a></li>
+                <li><a href="index.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt & Anfahrt</h1>
+                <p>Wir sind für Sie da in der Werderstraße 1, Wolfsburg.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2>So erreichen Sie uns</h2>
+                    <div class="info-item">
+                        <strong>Adresse:</strong><br>
+                        Werderstraße 1<br>
+                        38440 Wolfsburg
+                    </div>
+                    <div class="info-item">
+                        <strong>E-Mail:</strong><br>
+                        <a href="mailto:pwk00web.de@gmail.com">pwk00web.de@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Öffnungszeiten:</strong><br>
+                        Mo - Fr: 07:00 - 19:00 Uhr<br>
+                        Sa: Nach Vereinbarung
+                    </div>
+                    <div class="map-placeholder">
+                        <p>Hier würde eine interaktive Karte laden (Google Maps).</p>
+                        <a href="https://maps.google.com/?q=Werderstraße+1+Wolfsburg" target="_blank" class="btn btn-outline btn-sm">Route planen</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h2>Terminanfrage</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht / Wunschtermin</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Absenden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Zahnarzt Bernhard</h4>
+                <p>Werderstraße 1<br>38440 Wolfsburg</p>
+            </div>
+            <div class="footer-col">
+                <h4>Rechtliches</h4>
+                <ul class="footer-links">
+                    <li><a href="../impressum/index.html">Impressum</a></li>
+                    <li><a href="../datenschutz/index.html">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
