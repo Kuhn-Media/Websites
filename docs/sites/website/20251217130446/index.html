@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahnarzt Bernhard | Barrierefreie Zahnmedizin in Wolfsburg</title>
+  <meta name="description" content="Ihre Zahnarztpraxis in Wolfsburg. Spezialisiert auf Kinder, Angstpatienten und barrierefreie Behandlungen. Modern, einfühlsam, kompetent.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Zahnarzt Bernhard</a>
+      <button class="mobile-toggle" aria-label="Menü öffnen">&#9776;</button>
+      <nav class="nav-desktop">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Startseite</a></li>
+          <li><a href="leistungen/index.html" class="nav-link">Leistungen</a></li>
+          <li><a href="ueber-uns/index.html" class="nav-link">Über uns</a></li>
+          <li><a href="kontakt/index.html" class="nav-link">Kontakt</a></li>
+          <li><a href="kontakt/index.html" class="btn btn-primary">Termin vereinbaren</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Startseite</a></li>
+      <li><a href="leistungen/index.html" class="nav-link">Leistungen</a></li>
+      <li><a href="ueber-uns/index.html" class="nav-link">Über uns</a></li>
+      <li><a href="kontakt/index.html" class="nav-link">Kontakt</a></li>
+      <li><a href="kontakt/index.html" class="btn btn-primary">Termin vereinbaren</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center;">
+        <div class="hero-content reveal">
+          <div class="hero-badges">
+            <span class="badge">Wolfsburg</span>
+            <span class="badge">Barrierefrei</span>
+            <span class="badge">Kinderfreundlich</span>
+          </div>
+          <h1>Zahnmedizin für alle – modern & menschlich.</h1>
+          <p class="text-lg">Wir nehmen uns Zeit für Sie. Egal ob Vorsorge, akute Beschwerden oder spezielle Bedürfnisse: Bei Zahnarzt Bernhard stehen Sie als Mensch im Mittelpunkt.</p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="kontakt/index.html" class="btn btn-primary">Termin anfragen</a>
+            <a href="leistungen/index.html" class="btn btn-secondary">Leistungen ansehen</a>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--color-text-light); margin-top: 1rem;">✓ Barrierefreier Zugang &nbsp; ✓ Alle Kassen</p>
+        </div>
+        <div class="hero-image-wrapper reveal">
+          <!-- KM_IMAGE_REF: Hero | id=hero-main | file=hero-main.jpg -->
+          <img data-km-image="Hero" data-km-image-id="hero-main" src="hero-main.jpg" alt="Freundliches Team in moderner Praxis" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / USP -->
+  <section class="section">
+    <div class="container text-center reveal">
+      <h2 class="mb-4">Warum Zahnarzt Bernhard?</h2>
+      <p style="max-width: 700px; margin: 0 auto 3rem;">Wir glauben, dass jeder Mensch eine erstklassige Zahnbehandlung verdient – unabhängig von Alter oder Mobilität.</p>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">♿</div>
+          <h3>Barrierefrei</h3>
+          <p>Unsere Praxis ist vollständig rollstuhlgerecht. Breite Türen, ebenerdige Zugänge und angepasste Behandlungsstühle.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧸</div>
+          <h3>Kinderfreundlich</h3>
+          <p>Wir führen unsere kleinsten Patienten spielerisch an die Zahnpflege heran. Ohne Angst, mit viel Geduld.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⏱</div>
+          <h3>Zeit für Sie</h3>
+          <p>Keine Fließbandarbeit. Wir erklären Diagnosen verständlich und besprechen jeden Schritt gemeinsam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Section: Care Modes -->
+  <section class="section section-alt">
+    <div class="container reveal">
+      <div class="text-center mb-5">
+        <h2>Individuelle Betreuung</h2>
+        <p>Wählen Sie Ihren Bereich für mehr Informationen</p>
+      </div>
+
+      <div class="care-tabs">
+        <button class="care-tab-btn active" data-target="care-adults">Erwachsene & Vorsorge</button>
+        <button class="care-tab-btn" data-target="care-kids">Kinderzahnheilkunde</button>
+        <button class="care-tab-btn" data-target="care-special">Besondere Bedürfnisse</button>
+      </div>
+
+      <!-- Tab 1 -->
+      <div id="care-adults" class="care-content active">
+        <div>
+          <h3>Gesunde Zähne ein Leben lang</h3>
+          <p>Von der professionellen Zahnreinigung bis zum hochwertigen Zahnersatz. Wir setzen auf Zahnerhalt und moderne Methoden.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem;">
+            <li>✓ Regelmäßige Kontrolluntersuchungen</li>
+            <li>✓ Parodontitis-Behandlung</li>
+            <li>✓ Ästhetische Zahnmedizin</li>
+          </ul>
+          <a href="leistungen/index.html" class="btn btn-primary">Mehr erfahren</a>
+        </div>
+        <div class="hero-image-wrapper">
+           <!-- KM_IMAGE_REF: Treatment | id=treatment-room | file=treatment-room.jpg -->
+           <img data-km-image="Treatment" data-km-image-id="treatment-room" src="treatment-room.jpg" alt="Moderner Behandlungsraum" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <div id="care-kids" class="care-content">
+        <div>
+          <h3>Spielerisch zum Zahnarzt</h3>
+          <p>Der erste Besuch prägt oft das ganze Leben. Wir sorgen dafür, dass Ihr Kind gerne wiederkommt.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem;">
+            <li>✓ Einfühlsame Prophylaxe</li>
+            <li>✓ Putztraining</li>
+            <li>✓ Versiegelung</li>
+          </ul>
+          <a href="leistungen/index.html" class="btn btn-primary">Kinderzahnheilkunde</a>
+        </div>
+        <div class="hero-image-wrapper">
+           <!-- KM_IMAGE_REF: Kids | id=service-kids | file=service-kids.jpg -->
+           <img data-km-image="Kids" data-km-image-id="service-kids" src="service-kids.jpg" alt="Kind beim Zahnarzt" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Tab 3 -->
+      <div id="care-special" class="care-content">
+        <div>
+          <h3>Wir sind auf Sie eingestellt</h3>
+          <p>Für Patienten mit Behinderung oder Mobilitätseinschränkungen bieten wir spezielle Services und barrierefreie Räume.</p>
+          <ul style="list-style: none; margin-bottom: 1.5rem;">
+            <li>✓ Rollstuhlgerechte Praxis</li>
+            <li>✓ Ruhe und Geduld</li>
+            <li>✓ Angepasste Behandlungsmethoden</li>
+          </ul>
+          <a href="kontakt/index.html" class="btn btn-primary">Beratungstermin</a>
+        </div>
+        <div class="hero-image-wrapper">
+           <!-- KM_IMAGE_REF: Accessibility | id=accessibility-ramp | file=accessibility-ramp.jpg -->
+           <img data-km-image="Accessibility" data-km-image-id="accessibility-ramp" src="accessibility-ramp.jpg" alt="Barrierefreier Zugang" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container reveal">
+      <h2 class="text-center">Häufige Fragen</h2>
+      <div style="max-width: 800px; margin: 2rem auto;">
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            Nehmen Sie neue Patienten auf?
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Ja, wir freuen uns über neue Patienten aus Wolfsburg und Umgebung. Rufen Sie uns einfach an oder nutzen Sie das Kontaktformular.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            Ist die Praxis wirklich barrierefrei?
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Ja, unsere Praxis ist ebenerdig und verfügt über breite Türen sowie ein behindertengerechtes WC. Wir helfen Ihnen gerne beim Zugang.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            Behandeln Sie auch Angstpatienten?
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Absolut. Bitte sagen Sie uns bei der Terminvereinbarung Bescheid, dann planen wir mehr Zeit ein und besprechen alles ganz in Ruhe vor der Behandlung.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <h3>Zahnarzt Bernhard</h3>
+          <p>Ihre Praxis für die ganze Familie in Wolfsburg.</p>
+          <p>Werderstraße 1<br>38440 Wolfsburg</p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="leistungen/index.html">Leistungen</a></li>
+            <li><a href="ueber-uns/index.html">Über uns</a></li>
+            <li><a href="kontakt/index.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Rechtliches</h3>
+          <ul class="footer-links">
+            <li><a href="impressum/index.html">Impressum</a></li>
+            <li><a href="datenschutz/index.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Zahnarzt Bernhard. Alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div>
+      <strong>Datenschutz</strong><br>
+      Wir nutzen Cookies, um Ihnen die bestmögliche Erfahrung zu bieten. Nur essenzielle Daten werden gespeichert.
+    </div>
+    <button class="btn btn-primary js-accept-cookies">Akzeptieren</button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
