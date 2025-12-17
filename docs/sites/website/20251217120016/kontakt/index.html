@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Zahnarzt Bernhard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">Zahnarzt<span class="text-primary">Bernhard</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="../leistungen/index.html">Leistungen</a></li>
+                    <li><a href="../ueber-uns/index.html">Über uns</a></li>
+                    <li><a href="index.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="index.html" class="btn btn-primary">Termin</a>
+                <button class="mobile-toggle"><span class="bar"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Wir freuen uns auf Ihren Besuch.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid-2">
+                <div class="contact-info">
+                    <h2>Hier finden Sie uns</h2>
+                    <address class="contact-address">
+                        <strong>Zahnarzt Bernhard</strong><br>
+                        Werderstraße 1<br>
+                        38440 Wolfsburg
+                    </address>
+                    <p class="mt-2">
+                        <strong>E-Mail:</strong> <a href="mailto:pwk00web.de@gmail.com">pwk00web.de@gmail.com</a><br>
+                    </p>
+                    
+                    <h3 class="mt-2">Öffnungszeiten</h3>
+                    <ul class="opening-hours">
+                        <li><span>Montag - Freitag:</span> <span>07:00 - 19:00 Uhr</span></li>
+                        <li><span>Samstag - Sonntag:</span> <span>Geschlossen</span></li>
+                    </ul>
+
+                    <div class="map-placeholder mt-2">
+                        <!-- Placeholder for Map -->
+                        <div style="background: #eee; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                            <p>Karte wird geladen... (Werderstraße 1, Wolfsburg)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Termin anfragen</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht / Wunschtermin</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required> Ich stimme der Datenschutzerklärung zu.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Absenden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Zahnarzt Bernhard.</p>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
