@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | Zahnarzt Bernhard</title>
+  <base href="../">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Zahnarzt Bernhard</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="leistungen/">Leistungen</a></li>
+          <li><a href="ueber-uns/">Über uns</a></li>
+          <li><a href="kontakt/" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="kontakt/" class="btn btn-primary">Termin vereinbaren</a>
+        <button class="mobile-menu-toggle"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay">
+    <nav><ul><li><a href="index.html">Startseite</a></li><li><a href="leistungen/">Leistungen</a></li><li><a href="ueber-uns/">Über uns</a></li><li><a href="kontakt/">Kontakt</a></li><li><a href="impressum/">Impressum</a></li></ul></nav>
+  </div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Kontakt & Anfahrt</h1>
+        <p>Wir freuen uns auf Ihren Besuch in der Werderstraße 1.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="contact-info">
+            <h2>Ihr Weg zu uns</h2>
+            <div class="info-block">
+              <h3>Adresse</h3>
+              <p>Zahnarzt Bernhard<br>Werderstraße 1<br>38440 Wolfsburg</p>
+            </div>
+            <div class="info-block">
+              <h3>Kontakt</h3>
+              <p>E-Mail: <a href="mailto:pwk00web.de@gmail.com">pwk00web.de@gmail.com</a></p>
+              <p>Telefon: <span class="placeholder">05361 / 123 456</span> (Auf Anfrage)</p>
+            </div>
+            <div class="info-block">
+              <h3>Öffnungszeiten</h3>
+              <p>Mo - Fr: 07:00 - 19:00 Uhr</p>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <h2>Termin anfragen</h2>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Nachricht / Wunschtermin</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" required> Ich stimme der Datenschutzerklärung zu.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Absenden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <!-- Same footer -->
+    <div class="container">
+       <div class="footer-bottom"><p>&copy; 2025 Zahnarzt Bernhard.</p></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
