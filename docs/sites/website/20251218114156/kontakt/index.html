@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Lumina Solar GmbH</title>
+    <meta name="description" content="Kontaktieren Sie Lumina Solar in Berlin. Wir beraten Sie gerne zu Ihrer PV-Anlage.">
+    <base href="../">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="/" class="logo">Lumina<span class="text-accent">Solar</span></a>
+            <nav class="nav">
+                <a href="/">Startseite</a>
+                <a href="leistungen/">Leistungen</a>
+                <a href="ueber-uns/">Über uns</a>
+                <a href="kontakt/" class="active">Kontakt</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-small">
+        <div class="container">
+            <h1 class="reveal">Kontakt aufnehmen</h1>
+            <p class="reveal delay-1">Der erste Schritt zu Ihrer Unabhängigkeit.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="split-layout">
+                <div class="content-side reveal">
+                    <h2>Wir freuen uns auf Ihre Nachricht</h2>
+                    <p>Haben Sie Fragen zu unseren Leistungen oder wünschen Sie ein unverbindliches Angebot? Füllen Sie einfach das Formular aus oder schreiben Sie uns.</p>
+                    
+                    <div class="contact-info">
+                        <p><strong>Lumina Solar GmbH</strong><br>
+                        Berlin</p>
+                        <p>E-Mail: info@lumina-solar.de</p>
+                    </div>
+                </div>
+                <div class="form-side reveal delay-1">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon (optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Für Rückrufe">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Wie können wir Ihnen helfen?"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="/" class="logo">Lumina<span class="text-accent">Solar</span></a>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="leistungen/">Leistungen</a></li>
+                    <li><a href="ueber-uns/">Über uns</a></li>
+                    <li><a href="kontakt/">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="impressum/">Impressum</a></li>
+                    <li><a href="datenschutz/">Datenschutz</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <p>Lumina Solar GmbH<br>Berlin</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lumina Solar GmbH.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
