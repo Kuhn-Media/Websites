@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5'>
+  <title>Kontakt – Spruytenburg GmbH</title>
+  <meta name='description' content='Nehmen Sie Kontakt mit uns auf. Wir freuen uns auf Ihre Anfrage.'>
+  <link rel='stylesheet' href='../assets/css/styles.css'>
+  <link rel='icon' href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%25E2%259A%2599%25EF%25B8%258F%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a href='#main-content' class='skip-link'>Zum Hauptinhalt springen</a>
+
+  <header class='site-header' id='site-header'>
+    <div class='container header-container'>
+      <a href='../' class='logo' aria-label='Spruytenburg GmbH - Zur Startseite'>
+        Spruytenburg GmbH
+      </a>
+      <nav class='main-nav' aria-label='Hauptnavigation'>
+        <ul class='nav-list'>
+          <li><a href='../' class='nav-link'>Startseite</a></li>
+          <li><a href='../leistungen/' class='nav-link'>Leistungen</a></li>
+          <li><a href='../ueber-uns/' class='nav-link'>Über uns</a></li>
+          <li><a href='../karriere/' class='nav-link'>Karriere</a></li>
+          <li><a href='./' class='nav-link active'>Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href='./' class='btn btn-primary header-cta'>Projekt anfragen</a>
+      <button class='mobile-nav-toggle' aria-label='Navigation öffnen' aria-expanded='false' aria-controls='mobile-nav-drawer'>
+        <span class='hamburger-icon'></span>
+      </button>
+    </div>
+  </header>
+
+  <div class='mobile-nav-drawer' id='mobile-nav-drawer' aria-hidden='true'>
+    <div class='drawer-header'>
+        <a href='../' class='logo'>Spruytenburg GmbH</a>
+        <button class='mobile-nav-close' aria-label='Navigation schließen'>&times;</button>
+    </div>
+    <nav class='mobile-nav'>
+        <ul class='mobile-nav-list'>
+            <li><a href='../' class='nav-link'>Startseite</a></li>
+            <li><a href='../leistungen/' class='nav-link'>Leistungen</a></li>
+            <li><a href='../ueber-uns/' class='nav-link'>Über uns</a></li>
+            <li><a href='../karriere/' class='nav-link'>Karriere</a></li>
+            <li><a href='./' class='nav-link active'>Kontakt</a></li>
+        </ul>
+    </nav>
+    <a href='./' class='btn btn-primary drawer-cta'>Projekt anfragen</a>
+  </div>
+  <div class='mobile-nav-overlay'></div>
+
+  <main id='main-content'>
+    <section class='page-header section-padding'>
+      <div class='container text-center'>
+        <h1 class='headline'>Kontakt</h1>
+        <p class='subline'>Wir freuen uns auf Ihre Nachricht. Bitte beachten Sie, dass dieses Formular derzeit nicht aktiv ist. Bitte kontaktieren Sie uns telefonisch oder per E-Mail.</p>
+      </div>
+    </section>
+    <section class='contact-form-section section-padding surface-alt'>
+        <div class='container contact-grid'>
+            <div class='contact-info-col'>
+                <h3>Unsere Kontaktdaten</h3>
+                <p>Erreichen Sie uns direkt über die folgenden Kanäle. Wir sind während unserer Servicezeiten für Sie da.</p>
+                 <div class='contact-info'>
+                    <div class='info-item'>
+                        <strong>Adresse:</strong>
+                        <span>Spruytenburg GmbH<br>Hülsdonker Str. 45<br>47441 Moers</span>
+                    </div>
+                    <div class='info-item'>
+                        <strong>Telefon:</strong>
+                        <a href='tel:+49284123181'>02841 23181</a>
+                    </div>
+                    <div class='info-item'>
+                        <strong>E-Mail:</strong>
+                        <a href='mailto:info@spruytenburg.org'>info@spruytenburg.org</a>
+                    </div>
+                    <div class='info-item'>
+                        <strong>Servicezeiten:</strong>
+                        <span>Montag - Freitag: 08:00 – 16:00 Uhr</span>
+                    </div>
+                </div>
+            </div>
+            <form class='contact-form' action='#' method='POST'>
+                <div class='form-group'>
+                    <label for='name'>Name</label>
+                    <input type='text' id='name' name='name' required placeholder='Ihr Name'>
+                </div>
+                <div class='form-group'>
+                    <label for='email'>E-Mail</label>
+                    <input type='email' id='email' name='email' required placeholder='ihre@email.de'>
+                </div>
+                <div class='form-group'>
+                    <label for='message'>Ihre Nachricht</label>
+                    <textarea id='message' name='message' rows='5' required placeholder='Worum geht es in Ihrem Projekt?'></textarea>
+                </div>
+                <button type='submit' class='btn btn-primary' disabled>Nachricht senden (deaktiviert)</button>
+            </form>
+        </div>
+    </section>
+  </main>
+
+  <footer class='site-footer'>
+    <div class='container'>
+      <div class='footer-grid'>
+        <div class='footer-about'>
+          <h3>Spruytenburg GmbH</h3>
+          <p>Ihr ingenieurgeführter Meisterbetrieb für Heizung, Sanitär und barrierefreie Bäder in Moers. Seit über 75 Jahren.</p>
+        </div>
+        <div class='footer-nav'>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href='../'>Startseite</a></li>
+            <li><a href='../leistungen/'>Leistungen</a></li>
+            <li><a href='../ueber-uns/'>Über uns</a></li>
+            <li><a href='../karriere/'>Karriere</a></li>
+            <li><a href='./'>Kontakt</a></li>
+          </ul>
+        </div>
+        <div class='footer-contact'>
+          <h3>Kontakt</h3>
+          <address>
+            Hülsdonker Str. 45<br>
+            47441 Moers<br>
+            Tel: <a href='tel:+49284123181'>02841 23181</a><br>
+            E-Mail: <a href='mailto:info@spruytenburg.org'>info@spruytenburg.org</a>
+          </address>
+        </div>
+      </div>
+      <div class='footer-bottom'>
+        <p>&copy; 2024 Spruytenburg GmbH</p>
+        <nav class='legal-nav'>
+          <a href='../impressum/'>Impressum</a>
+          <a href='../datenschutz/'>Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class='cookie-banner' id='cookie-banner' role='dialog' aria-labelledby='cookie-title' aria-describedby='cookie-description' aria-hidden='true'>
+    <div class='cookie-content'>
+        <p id='cookie-description'>Wir verwenden Cookies, um die Funktionalität unserer Website zu gewährleisten. Weitere Informationen finden Sie in unserer <a href='../datenschutz/'>Datenschutzerklärung</a>.</p>
+    </div>
+    <div class='cookie-actions'>
+        <button class='btn btn-primary' id='cookie-accept'>Akzeptieren</button>
+        <button class='btn btn-outline' id='cookie-decline'>Ablehnen</button>
+    </div>
+  </div>
+
+  <script src='../assets/js/main.js'></script>
+</body>
+</html>
