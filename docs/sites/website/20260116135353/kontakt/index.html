@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5'>
+    <title>Kontakt – Claus Eberlein GmbH</title>
+    <meta name='description' content='Nehmen Sie Kontakt mit uns auf. Wir freuen uns auf Ihre Anfrage für Heizung, Bad und Sanitär in Neumünster. Rufen Sie an oder schreiben Sie uns.'>
+    <link rel='stylesheet' href='../assets/css/styles.css'>
+</head>
+<body>
+    <a href='#main-content' class='skip-link'>Zum Hauptinhalt springen</a>
+    <header class='site-header sticky'>
+        <div class='container'>
+            <div class='header-content'>
+                <a href='../' class='logo'>Claus Eberlein GmbH</a>
+                <nav class='main-nav'>
+                    <ul class='nav-list'>
+                        <li><a href='../' class='nav-link'>Startseite</a></li>
+                        <li class='has-dropdown'>
+                            <a href='../leistungen/' class='nav-link'>Leistungen</a>
+                            <ul class='dropdown-menu'>
+                                <li><a href='../heizung/' class='nav-link'>Heizung & Wärme</a></li>
+                                <li><a href='../bad-sanitaer/' class='nav-link'>Bad & Sanitär</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='../ueber-uns/' class='nav-link'>Über Uns</a></li>
+                        <li><a href='../kontakt/' class='nav-link active'>Kontakt</a></li>
+                    </ul>
+                </nav>
+                <a href='../kontakt/' class='btn btn-primary header-cta'>Beratung anfordern</a>
+                <button class='mobile-menu-toggle' aria-label='Menü öffnen' aria-expanded='false'>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id='main-content'>
+        <section class='hero text-only'>
+            <div class='container'>
+                <div class='hero-content text-center reveal-item'>
+                    <span class='kicker'>Kontakt</span>
+                    <h1>Wir sind für Sie da.</h1>
+                    <p class='subline'>Haben Sie eine Frage, wünschen Sie eine Beratung oder möchten Sie ein konkretes Projekt anfragen? Nehmen Sie Kontakt mit uns auf. Wir freuen uns darauf, Sie und Ihr Vorhaben kennenzulernen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class='contact-section'>
+            <div class='container'>
+                <div class='contact-grid'>
+                    <div class='contact-info reveal-item'>
+                        <h3>Ihr direkter Draht zu uns</h3>
+                        <div class='info-block'>
+                            <h4>Anschrift</h4>
+                            <p>Claus Eberlein Heizung und Sanitär GmbH<br>Kampstraße 101<br>24539 Neumünster</p>
+                        </div>
+                        <div class='info-block'>
+                            <h4>Kontakt</h4>
+                            <p><a href='tel:04321755222'>Telefon: 04321 755222</a><br><a href='mailto:info@claus-eberlein.de'>E-Mail: info@claus-eberlein.de</a></p>
+                        </div>
+                        <div class='info-block'>
+                            <h4>Unsere Geschäftszeiten</h4>
+                            <p>Für eine persönliche Beratung in unserem Büro bitten wir um vorherige Terminvereinbarung, damit wir uns ausreichend Zeit für Sie nehmen können.</p>
+                        </div>
+                    </div>
+                    <div class='contact-form-wrapper reveal-item' style='animation-delay: 100ms;'>
+                        <h3>Schreiben Sie uns eine Nachricht</h3>
+                        <p>Füllen Sie einfach das Formular aus und wir melden uns so schnell wie möglich bei Ihnen zurück – in der Regel innerhalb eines Werktages.</p>
+                        <form class='contact-form' action='#' method='POST'>
+                            <div class='form-group'>
+                                <label for='name'>Ihr Name</label>
+                                <input type='text' id='name' name='name' required>
+                            </div>
+                            <div class='form-group'>
+                                <label for='email'>Ihre E-Mail-Adresse</label>
+                                <input type='email' id='email' name='email' required>
+                            </div>
+                            <div class='form-group'>
+                                <label for='phone'>Ihre Telefonnummer (optional)</label>
+                                <input type='tel' id='phone' name='phone'>
+                            </div>
+                            <div class='form-group'>
+                                <label for='subject'>Worum geht es?</label>
+                                <select id='subject' name='subject'>
+                                    <option>Beratung zur Badsanierung</option>
+                                    <option>Beratung zur Heizungsmodernisierung</option>
+                                    <option>Anfrage zu Wartung & Service</option>
+                                    <option>Allgemeine Frage</option>
+                                </select>
+                            </div>
+                            <div class='form-group'>
+                                <label for='message'>Ihre Nachricht an uns</label>
+                                <textarea id='message' name='message' rows='5' required></textarea>
+                            </div>
+                            <div class='form-group privacy'>
+                                <input type='checkbox' id='privacy' name='privacy' required>
+                                <label for='privacy'>Ich habe die <a href='../datenschutz/'>Datenschutzerklärung</a> gelesen und bin damit einverstanden.</label>
+                            </div>
+                            <button type='submit' class='btn btn-primary'>Nachricht senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class='site-footer'>
+        <div class='container'>
+            <div class='footer-grid'>
+                <div class='footer-col'>
+                    <h4>Claus Eberlein GmbH</h4>
+                    <p>Ihr Meisterbetrieb für Heizung & Sanitär in Neumünster. Wir verbinden Handwerk mit Zukunft.</p>
+                </div>
+                <div class='footer-col'>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href='../'>Startseite</a></li>
+                        <li><a href='../leistungen/'>Leistungen</a></li>
+                        <li><a href='../ueber-uns/'>Über Uns</a></li>
+                        <li><a href='../kontakt/'>Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class='footer-col'>
+                    <h4>Kontakt</h4>
+                    <address>
+                        Kampstraße 101<br>
+                        24539 Neumünster<br>
+                        <a href='tel:04321755222'>Telefon: 04321 755222</a><br>
+                        <a href='mailto:info@claus-eberlein.de'>E-Mail: info@claus-eberlein.de</a>
+                    </address>
+                </div>
+                <div class='footer-col'>
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href='../impressum/'>Impressum</a></li>
+                        <li><a href='../datenschutz/'>Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer-bottom'>
+                <p>&copy; 2024 Claus Eberlein Heizung und Sanitär GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+    <script src='../assets/js/main.js'></script>
+</body>
+</html>
