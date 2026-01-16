@@ -1,0 +1,69 @@
+{
+  "tenantId": "km-jansenhaustechnik-de",
+  "domain": "jansenhaustechnik.de",
+  "brief": {
+    "company": {
+      "name": "Holger Jansen Haustechnik",
+      "currentWebsite": "http://www.jansenhaustechnik.de/",
+      "city": "",
+      "contactName": "",
+      "contactEmail": "",
+      "contactPhone": ""
+    },
+    "business": {
+      "vertical": "",
+      "servicesMain": [
+        "Heizungstechnik",
+        "Sanitärinstallationen",
+        "komplette Badsanierung (inkl. 3D-Planung und altersgerechte Bäder)",
+        "Wartung und Inspektion von Heizungsanlagen (Öl/Gas)",
+        "Solaranlagen",
+        "Fußbodenheizung",
+        "Brennwerttechnik",
+        "Sicherheitsprüfung von Gasanlagen",
+        "Hydraulischer Ausgleich",
+        "Rohrreinigung und Leckortung mittels Kamera",
+        "Trinkwasser-Hygiene-Checks (DIN VDI/DVGW 6023)",
+        "Notdienst."
+      ],
+      "servicesSecondary": []
+    },
+    "brand": {
+      "toneOfVoice": "professionell, ruhig, vertrauensvoll",
+      "values": []
+    },
+    "content": {
+      "faqRaw": "",
+      "special": ""
+    },
+    "chat": {
+      "goals": [],
+      "useCases": [
+        "Allgemeine Fragen & Infos",
+        "FAQ / häufige Fragen",
+        "Lead-Generierung (Kontakt / Angebote)"
+      ],
+      "openingHours": "",
+      "afterHoursBehavior": "",
+      "allowedData": "",
+      "leadHandling": "",
+      "noGos": "",
+      "rules": "",
+      "escalationRules": "",
+      "languages": [
+        "Deutsch"
+      ],
+      "smallTalk": ""
+    }
+  },
+  "snippet": "<link href=\"https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css\" rel=\"stylesheet\" />\n\n<style>\n  :root {\n    /* Farb- & Typo-System */\n    --chat--font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n      sans-serif;\n    --chat--color-primary: #f97316;\n    --chat--color-primary-shade-50: #f97316;\n    --chat--color-secondary: #f97316;\n    --chat--color-light: #f9fafb;\n    --chat--color-dark: #020617;\n\n    /* Fenster-Layout */\n    --chat--window--width: min(420px, 100vw);\n    --chat--window--height: 74vh;\n    --chat--border-radius: 22px;\n    --chat--header--background: transparent;\n    --chat--header--color: #f9fafb;\n    --chat--header--padding: 0.85rem 1.1rem;\n    --chat--heading--font-size: 1rem;\n    --chat--subtitle--font-size: 0.78rem;\n\n    /* Bubbles */\n    --chat--message--bot--background: #f97316;\n    --chat--message--bot--color: #111827;\n    --chat--message--user--background: #020617;\n    --chat--message--user--color: #e5e7eb;\n\n    /* Launcher */\n    --chat--launcher--background: #f97316;\n    --chat--launcher--color: #ffffff;\n    --chat--launcher--border-radius: 999px;\n  }\n\n  /* --- Keyframes für subtile Animationen --- */\n  @keyframes km-widget-fade-up {\n    from {\n      opacity: 0;\n      transform: translateY(16px) scale(0.98);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0) scale(1);\n    }\n  }\n\n  @keyframes km-dot-pulse {\n    0%   { transform: scale(0.9); opacity: 0.85; }\n    50%  { transform: scale(1.1); opacity: 1; }\n    100% { transform: scale(0.9); opacity: 0.85; }\n  }\n\n  @keyframes km-launcher-pulse {\n    0%   { box-shadow: 0 0 0 0 rgba(15,23,42,0.45); transform: translateY(0); }\n    60%  { box-shadow: 0 0 0 14px rgba(15,23,42,0); transform: translateY(-1px); }\n    100% { box-shadow: 0 0 0 0 rgba(15,23,42,0); transform: translateY(0); }\n  }\n\n  /* --- Gesamt-Window – Glassmorphism & Rahmen --- */\n  .chat-window {\n    position: relative;\n    border-radius: 22px;\n    overflow: hidden;\n    background:\n      radial-gradient(circle at top left, rgba(148,163,184,0.14), transparent 55%),\n      rgba(15,23,42,0.96);\n    border: 1px solid rgba(148,163,184,0.35);\n    box-shadow:\n      0 22px 60px rgba(15, 23, 42, 0.68),\n      0 0 0 1px rgba(15, 23, 42, 0.75);\n    backdrop-filter: blur(20px);\n    font-family: var(--chat--font-family);\n    animation: km-widget-fade-up 260ms ease-out;\n  }\n\n  /* Dekorativer Rand */\n  .chat-window::before {\n    content: \"\";\n    position: absolute;\n    inset: -1px;\n    border-radius: inherit;\n    pointer-events: none;\n    background: radial-gradient(\n      circle at top right,\n      rgba(248,250,252,0.32),\n      transparent 55%\n    );\n    mix-blend-mode: screen;\n    opacity: 0.65;\n  }\n\n  /* --- Header mit Gradient, Avatar & Online-Badge --- */\n  .chat-window header {\n    position: relative;\n    background: linear-gradient(135deg, #020617 0%, #f97316 45%, #facc15 100%);\n    border-bottom: 1px solid rgba(15,23,42,0.55);\n    padding: 0.9rem 1.1rem 0.8rem;\n    display: flex;\n    align-items: center;\n    gap: 0.85rem;\n    z-index: 1;\n  }\n\n  .chat-window header::before {\n    content: \"H\";\n    width: 34px;\n    height: 34px;\n    border-radius: 999px;\n    background:\n      radial-gradient(circle at 30% 0%, #ffffff, #f97316);\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    font-weight: 700;\n    color: #020617;\n    box-shadow: 0 0 0 3px rgba(15,23,42,0.7);\n    flex-shrink: 0;\n  }\n\n  .chat-header-text {\n    display: flex;\n    flex-direction: column;\n    gap: 0.12rem;\n    min-width: 0;\n  }\n\n  .chat-header-title {\n    font-size: 0.96rem;\n    font-weight: 600;\n    color: #f9fafb;\n    letter-spacing: 0.01em;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    overflow: hidden;\n  }\n\n  .chat-header-subtitle {\n    font-size: 0.74rem;\n    color: rgba(226,232,240,0.9);\n  }\n\n  .chat-header-chip {\n    margin-left: auto;\n    font-size: 0.68rem;\n    padding: 0.18rem 0.55rem;\n    border-radius: 999px;\n    background: rgba(15,23,42,0.55);\n    border: 1px solid rgba(148,163,184,0.65);\n    color: #e5e7eb;\n    display: inline-flex;\n    align-items: center;\n    gap: 0.28rem;\n    white-space: nowrap;\n  }\n\n  .chat-header-chip::before {\n    content: \"\";\n    width: 8px;\n    height: 8px;\n    border-radius: 999px;\n    background: #22c55e;\n    box-shadow: 0 0 0 4px rgba(34,197,94,0.3);\n    animation: km-dot-pulse 1.4s ease-in-out infinite;\n  }\n\n  /* kleiner „powered by“-Hint */\n  .chat-header-subtitle span.km-powered {\n    font-size: 0.68rem;\n    opacity: 0.85;\n  }\n\n  /* --- Body / Messages --- */\n  .chat-window main {\n    padding: 0.8rem 0.9rem 0.95rem;\n  }\n\n  .chat-message-bot {\n    border-radius: 18px 18px 18px 6px;\n    box-shadow: 0 10px 24px rgba(15,23,42,0.5);\n  }\n\n  .chat-message-user {\n    border-radius: 18px 18px 6px 18px;\n    border: 1px solid rgba(148,163,184,0.5);\n    background: radial-gradient(circle at top left, rgba(15,23,42,0.5), #020617);\n  }\n\n  /* Typografie in Nachrichten */\n  .chat-message-bot p,\n  .chat-message-user p {\n    font-size: 0.86rem;\n    line-height: 1.45;\n  }\n\n  /* --- Input-Bar / Sendebereich --- */\n  .chat-input {\n    border-top: 1px solid rgba(30,64,175,0.7);\n    background: linear-gradient(\n      to top,\n      rgba(15,23,42,0.98),\n      rgba(15,23,42,0.93)\n    );\n    padding-bottom: 0.75rem;\n  }\n\n  .chat-input textarea,\n  .chat-input input[type=\"text\"] {\n    border-radius: 999px;\n    border: 1px solid rgba(148,163,184,0.55);\n    background: rgba(15,23,42,0.9);\n    color: #e5e7eb;\n    font-size: 0.86rem;\n  }\n\n  .chat-input textarea:focus,\n  .chat-input input[type=\"text\"]:focus {\n    outline: none;\n    border-color: #f97316;\n    box-shadow: 0 0 0 1px rgba(148,163,184,0.5);\n  }\n\n  .chat-input button {\n    border-radius: 999px;\n    font-weight: 500;\n  }\n\n  /* --- Launcher-Button mit Label & Pulse --- */\n  .chat-launcher {\n    position: relative;\n    box-shadow: 0 18px 40px rgba(15,23,42,0.7);\n    border: 1px solid rgba(15,23,42,0.85);\n    animation: km-launcher-pulse 2.6s ease-out infinite;\n    transition: transform 160ms ease-out, box-shadow 160ms ease-out;\n  }\n\n  .chat-launcher:hover {\n    transform: translateY(-1px) scale(1.02);\n    animation: none;\n    box-shadow: 0 20px 44px rgba(15,23,42,0.8);\n  }\n\n  .chat-launcher::before {\n    content: \"Chat mit Holger Jansen Haust…\";\n    position: absolute;\n    bottom: 120%;\n    right: 0;\n    transform: translateY(-4px);\n    background: rgba(15,23,42,0.96);\n    color: #e5e7eb;\n    padding: 0.18rem 0.55rem;\n    border-radius: 999px;\n    font-size: 0.68rem;\n    border: 1px solid rgba(148,163,184,0.7);\n    white-space: nowrap;\n  }\n\n  /* Mobile: Label über Launcher nicht so aggressiv anzeigen */\n  @media (max-width: 640px) {\n    .chat-launcher::before {\n      opacity: 0.9;\n      font-size: 0.64rem;\n      right: 4px;\n    }\n  }\n\n  /* --- Mobile: App-Feeling --- */\n  @media (max-width: 768px) {\n    .chat-window {\n      width: 100vw !important;\n      max-width: 100vw !important;\n      height: calc(100vh - 82px) !important;\n      bottom: 0 !important;\n      right: 0 !important;\n      border-radius: 20px 20px 0 0;\n      border-left: none;\n      border-right: none;\n    }\n  }\n</style>\n\n<script type=\"module\">\n  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';\n\n  createChat({\n    webhookUrl: 'https://n8n.srv1000937.hstgr.cloud/webhook/km-chat/chat',\n    webhookConfig: {\n      method: 'POST',\n      headers: {}\n    },\n    mode: 'window',\n    chatInputKey: 'chatInput',\n    chatSessionKey: 'sessionId',\n    loadPreviousSession: true,\n    metadata: { tenantId: 'km-jansenhaustechnik-de' },\n    showWelcomeScreen: false,\n    defaultLanguage: 'de',\n    initialMessages: [\n      'Willkommen bei Holger Jansen Haustechnik! 👋',\n      'Wie können wir Ihnen konkret weiterhelfen?'\n    ],\n    i18n: {\n      de: {\n        title: 'Chat mit Holger Jansen Haustechnik',\n        subtitle: 'Schnelle, persönliche Antworten zu Leistungen, Terminen & Angeboten.',\n        footer: '',\n        getStarted: 'Chat starten',\n        inputPlaceholder: 'Kurz Ihre Frage hier eintippen …'\n      }\n    }\n  });\n</script>",
+  "owner": "Kuhn-Media",
+  "repo": "Websites",
+  "branch": "main",
+  "baseDir": "docs/sites",
+  "clientSlug": "holger-jansen-haustechnik",
+  "runId": "20260116171049",
+  "liveDir": "docs/sites/holger-jansen-haustechnik",
+  "versionDir": "docs/sites/holger-jansen-haustechnik/20260116171049",
+  "__index": 0
+}
