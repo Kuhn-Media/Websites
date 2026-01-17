@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5'>
+    <title>Günter John GmbH – Heizung & Sanitär Meisterbetrieb in Vellmar</title>
+    <meta name='description' content='Seit über 50 Jahren Ihr Experte für moderne Heiztechnik, Traumbäder und barrierefreie Badgestaltung in Vellmar. Zuverlässig, zertifiziert und persönlich.'>
+    <link rel='stylesheet' href='assets/css/styles.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap' rel='stylesheet'>
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<style>
+  :root {
+    /* Farb- & Typo-System */
+    --chat--font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    --chat--color-primary: #f97316;
+    --chat--color-primary-shade-50: #f97316;
+    --chat--color-secondary: #f97316;
+    --chat--color-light: #f9fafb;
+    --chat--color-dark: #020617;
+
+    /* Fenster-Layout */
+    --chat--window--width: min(420px, 100vw);
+    --chat--window--height: 74vh;
+    --chat--border-radius: 22px;
+    --chat--header--background: transparent;
+    --chat--header--color: #f9fafb;
+    --chat--header--padding: 0.85rem 1.1rem;
+    --chat--heading--font-size: 1rem;
+    --chat--subtitle--font-size: 0.78rem;
+
+    /* Bubbles */
+    --chat--message--bot--background: #f97316;
+    --chat--message--bot--color: #111827;
+    --chat--message--user--background: #020617;
+    --chat--message--user--color: #e5e7eb;
+
+    /* Launcher */
+    --chat--launcher--background: #f97316;
+    --chat--launcher--color: #ffffff;
+    --chat--launcher--border-radius: 999px;
+  }
+
+  /* --- Keyframes für subtile Animationen --- */
+  @keyframes km-widget-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes km-dot-pulse {
+    0%   { transform: scale(0.9); opacity: 0.85; }
+    50%  { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.85; }
+  }
+
+  @keyframes km-launcher-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(15,23,42,0.45); transform: translateY(0); }
+    60%  { box-shadow: 0 0 0 14px rgba(15,23,42,0); transform: translateY(-1px); }
+    100% { box-shadow: 0 0 0 0 rgba(15,23,42,0); transform: translateY(0); }
+  }
+
+  /* --- Gesamt-Window – Glassmorphism & Rahmen --- */
+  .chat-window {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top left, rgba(148,163,184,0.14), transparent 55%),
+      rgba(15,23,42,0.96);
+    border: 1px solid rgba(148,163,184,0.35);
+    box-shadow:
+      0 22px 60px rgba(15, 23, 42, 0.68),
+      0 0 0 1px rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(20px);
+    font-family: var(--chat--font-family);
+    animation: km-widget-fade-up 260ms ease-out;
+  }
+
+  /* Dekorativer Rand */
+  .chat-window::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at top right,
+      rgba(248,250,252,0.32),
+      transparent 55%
+    );
+    mix-blend-mode: screen;
+    opacity: 0.65;
+  }
+
+  /* --- Header mit Gradient, Avatar & Online-Badge --- */
+  .chat-window header {
+    position: relative;
+    background: linear-gradient(135deg, #020617 0%, #f97316 45%, #facc15 100%);
+    border-bottom: 1px solid rgba(15,23,42,0.55);
+    padding: 0.9rem 1.1rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    z-index: 1;
+  }
+
+  .chat-window header::before {
+    content: "G";
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle at 30% 0%, #ffffff, #f97316);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #020617;
+    box-shadow: 0 0 0 3px rgba(15,23,42,0.7);
+    flex-shrink: 0;
+  }
+
+  .chat-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+    min-width: 0;
+  }
+
+  .chat-header-title {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #f9fafb;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .chat-header-subtitle {
+    font-size: 0.74rem;
+    color: rgba(226,232,240,0.9);
+  }
+
+  .chat-header-chip {
+    margin-left: auto;
+    font-size: 0.68rem;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(15,23,42,0.55);
+    border: 1px solid rgba(148,163,184,0.65);
+    color: #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    white-space: nowrap;
+  }
+
+  .chat-header-chip::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34,197,94,0.3);
+    animation: km-dot-pulse 1.4s ease-in-out infinite;
+  }
+
+  /* kleiner „powered by“-Hint */
+  .chat-header-subtitle span.km-powered {
+    font-size: 0.68rem;
+    opacity: 0.85;
+  }
+
+  /* --- Body / Messages --- */
+  .chat-window main {
+    padding: 0.8rem 0.9rem 0.95rem;
+  }
+
+  .chat-message-bot {
+    border-radius: 18px 18px 18px 6px;
+    box-shadow: 0 10px 24px rgba(15,23,42,0.5);
+  }
+
+  .chat-message-user {
+    border-radius: 18px 18px 6px 18px;
+    border: 1px solid rgba(148,163,184,0.5);
+    background: radial-gradient(circle at top left, rgba(15,23,42,0.5), #020617);
+  }
+
+  /* Typografie in Nachrichten */
+  .chat-message-bot p,
+  .chat-message-user p {
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  /* --- Input-Bar / Sendebereich --- */
+  .chat-input {
+    border-top: 1px solid rgba(30,64,175,0.7);
+    background: linear-gradient(
+      to top,
+      rgba(15,23,42,0.98),
+      rgba(15,23,42,0.93)
+    );
+    padding-bottom: 0.75rem;
+  }
+
+  .chat-input textarea,
+  .chat-input input[type="text"] {
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.55);
+    background: rgba(15,23,42,0.9);
+    color: #e5e7eb;
+    font-size: 0.86rem;
+  }
+
+  .chat-input textarea:focus,
+  .chat-input input[type="text"]:focus {
+    outline: none;
+    border-color: #f97316;
+    box-shadow: 0 0 0 1px rgba(148,163,184,0.5);
+  }
+
+  .chat-input button {
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  /* --- Launcher-Button mit Label & Pulse --- */
+  .chat-launcher {
+    position: relative;
+    box-shadow: 0 18px 40px rgba(15,23,42,0.7);
+    border: 1px solid rgba(15,23,42,0.85);
+    animation: km-launcher-pulse 2.6s ease-out infinite;
+    transition: transform 160ms ease-out, box-shadow 160ms ease-out;
+  }
+
+  .chat-launcher:hover {
+    transform: translateY(-1px) scale(1.02);
+    animation: none;
+    box-shadow: 0 20px 44px rgba(15,23,42,0.8);
+  }
+
+  .chat-launcher::before {
+    content: "Chat mit Günter John GmbH";
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    transform: translateY(-4px);
+    background: rgba(15,23,42,0.96);
+    color: #e5e7eb;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    border: 1px solid rgba(148,163,184,0.7);
+    white-space: nowrap;
+  }
+
+  /* Mobile: Label über Launcher nicht so aggressiv anzeigen */
+  @media (max-width: 640px) {
+    .chat-launcher::before {
+      opacity: 0.9;
+      font-size: 0.64rem;
+      right: 4px;
+    }
+  }
+
+  /* --- Mobile: App-Feeling --- */
+  @media (max-width: 768px) {
+    .chat-window {
+      width: 100vw !important;
+      max-width: 100vw !important;
+      height: calc(100vh - 82px) !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      border-radius: 20px 20px 0 0;
+      border-left: none;
+      border-right: none;
+    }
+  }
+</style>
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://n8n.srv1000937.hstgr.cloud/webhook/km-chat/chat',
+    webhookConfig: {
+      method: 'POST',
+      headers: {}
+    },
+    mode: 'window',
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    loadPreviousSession: true,
+    metadata: { tenantId: 'km-john-vellmar-de' },
+    showWelcomeScreen: false,
+    defaultLanguage: 'de',
+    initialMessages: [
+      'Willkommen bei Günter John GmbH! 👋',
+      'Wie können wir Ihnen konkret weiterhelfen?'
+    ],
+    i18n: {
+      de: {
+        title: 'Chat mit Günter John GmbH',
+        subtitle: 'Schnelle, persönliche Antworten zu Leistungen, Terminen & Angeboten.',
+        footer: '',
+        getStarted: 'Chat starten',
+        inputPlaceholder: 'Kurz Ihre Frage hier eintippen …'
+      }
+    }
+  });
+</script>
+</head>
+<body>
+    <a href='#main-content' class='skip-link'>Zum Hauptinhalt springen</a>
+    <header class='site-header sticky-header'>
+        <div class='container'>
+            <a href='' class='logo'>Günter John GmbH</a>
+            <nav class='main-nav'>
+                <ul>
+                    <li><a href='' class='active'>Startseite</a></li>
+                    <li><a href='leistungen/'>Leistungen</a></li>
+                    <li><a href='barrierefreies-bad/'>Barrierefreies Bad</a></li>
+                    <li><a href='ueber-uns/'>Über Uns</a></li>
+                    <li><a href='karriere/'>Karriere</a></li>
+                    <li><a href='kontakt/'>Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class='mobile-menu-toggle' aria-label='Menü öffnen' aria-expanded='false'>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+        </div>
+    </header>
+
+    <div class='mobile-menu-drawer'>
+        <nav>
+            <ul>
+                <li><a href=''>Startseite</a></li>
+                <li><a href='leistungen/'>Leistungen</a></li>
+                <li><a href='barrierefreies-bad/'>Barrierefreies Bad</a></li>
+                <li><a href='ueber-uns/'>Über Uns</a></li>
+                <li><a href='karriere/'>Karriere</a></li>
+                <li><a href='kontakt/'>Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class='menu-overlay'></div>
+
+    <main id='main-content'>
+        <section class='hero'>
+            <div class='container hero-content'>
+                <div class='hero-text reveal-item'>
+                    <span class='kicker'>Ihr Meisterbetrieb in Vellmar</span>
+                    <h1>50 Jahre Handwerk für Ihr Zuhause.</h1>
+                    <p class='subline'>Wir verbinden traditionelle Qualität mit modernster Technik – für zukunftssichere Heizungen, Traumbäder und zertifiziert barrierefreie Lebensräume. Verlassen Sie sich auf Erfahrung, die den Unterschied macht.</p>
+                    <div class='cta-group'>
+                        <a href='kontakt/' class='btn btn-primary'>Jetzt Projekt anfragen</a>
+                        <a href='tel:0561821483' class='btn btn-secondary'>Notdienst anrufen</a>
+                    </div>
+                    <div class='trust-chips'>
+                        <span>Über 50 Jahre Erfahrung</span>
+                        <span>Zertifiziert barrierefrei</span>
+                        <span>Meisterbetrieb der Innung</span>
+                    </div>
+                </div>
+                <div class='hero-image-wrapper reveal-item'>
+                    <!-- KM_IMAGE_REF: assets/img/image.png -->
+                    <img src='assets/img/image.png' data-km-image='assets/img/image.png' alt='Hintergrundbild für den Hero-Bereich, um die Kernkompetenz Barrierefreies Bad visuell zu etablieren und Platz für die Headline zu bieten.' loading='eager' sizes='(max-width: 768px) 100vw, 50vw'>
+                </div>
+            </div>
+        </section>
+
+        <section class='trust-stripe surface'>
+            <div class='container reveal-item'>
+                <div class='stripe-header'>
+                    <span class='kicker'>Ihr zertifizierter Fachbetrieb in Vellmar</span>
+                    <h2>Geprüfte Qualität, auf die Sie sich verlassen können.</h2>
+                </div>
+                <div class='stripe-elements'>
+                    <div class='stripe-element'>
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M12 1.5l8.5 4v9l-8.5 5.5L3.5 14.5v-9l8.5-4zM11 14l6-3.25-2.5-1.5-3.5 2V14zm-1-1.5V10l-3-1.75 3-1.75v2.5l1 0.5v2z'/></svg>
+                        <span>Fachbetrieb KOMFORT barrierefrei</span>
+                    </div>
+                    <div class='stripe-element'>
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
+                        <span>4.0 Sterne / 21 Bewertungen</span>
+                    </div>
+                    <div class='stripe-element'>
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg>
+                        <span>Innungsfachbetrieb SHK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='services-teaser'>
+            <div class='container'>
+                <div class='section-header reveal-item'>
+                    <h2>Unsere Leistungen für Ihr Zuhause</h2>
+                    <p>Von der effizienten Heizungsanlage bis zum komfortablen Badezimmer – wir sind Ihr Partner für alle Bereiche der modernen Haustechnik.</p>
+                </div>
+                <div class='services-grid'>
+                    <div class='service-card reveal-item'>
+                        <div class='card-image'>
+                            <!-- KM_IMAGE_REF: assets/img/image_1.png -->
+                            <img src='assets/img/image_1.png' data-km-image='assets/img/image_1.png' alt='Visuelle Darstellung der Kompetenz im Bereich moderne Heiztechnik und Energieeffizienz.' loading='lazy' sizes='(max-width: 768px) 100vw, 33vw'>
+                        </div>
+                        <div class='card-content'>
+                            <h3>Heizung & Energie</h3>
+                            <p>Ob Gas, Öl oder alternative Energien – wir planen und installieren Heizsysteme, die perfekt zu Ihrem Bedarf passen und Kosten sparen.</p>
+                            <a href='leistungen/#heizung' class='card-link'>Mehr erfahren</a>
+                        </div>
+                    </div>
+                    <div class='service-card reveal-item'>
+                        <div class='card-image'>
+                            <!-- KM_IMAGE_REF: assets/img/image_2.png -->
+                            <img src='assets/img/image_2.png' data-km-image='assets/img/image_2.png' alt='Symbolisiert die Qualität und Ästhetik der Sanitärinstallationen (Bad & Wasser).' loading='lazy' sizes='(max-width: 768px) 100vw, 33vw'>
+                        </div>
+                        <div class='card-content'>
+                            <h3>Sanitär & Bad</h3>
+                            <p>Wir gestalten Ihr Badezimmer neu – von der einzelnen Armatur bis zur kompletten Wohlfühloase. Funktional, modern und langlebig.</p>
+                            <a href='leistungen/#sanitaer' class='card-link'>Mehr erfahren</a>
+                        </div>
+                    </div>
+                    <div class='service-card reveal-item'>
+                        <div class='card-image'>
+                            <!-- KM_IMAGE_REF: assets/img/image_3.png -->
+                            <img src='assets/img/image_3.png' data-km-image='assets/img/image_3.png' alt='Zeigt, dass barrierefreie Lösungen stilvoll und modern sein können.' loading='lazy' sizes='(max-width: 768px) 100vw, 33vw'>
+                        </div>
+                        <div class='card-content'>
+                            <h3>Barrierefreies Wohnen</h3>
+                            <p>Als zertifizierter Fachbetrieb schaffen wir Bäder, die Sicherheit und Komfort im Alltag garantieren. Für mehr Lebensqualität in jedem Alter.</p>
+                            <a href='barrierefreies-bad/' class='card-link'>Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='specialization surface'>
+            <div class='container split-layout'>
+                <div class='split-text reveal-item'>
+                    <span class='kicker'>Unsere Kernkompetenz</span>
+                    <h2>Ihr Spezialist für barrierefreie Bäder</h2>
+                    <p>Ein barrierefreies Bad bedeutet mehr als nur eine bodengleiche Dusche. Es ist ein Versprechen für mehr Komfort, Sicherheit und Unabhängigkeit im eigenen Zuhause. Als zertifizierter Fachbetrieb planen wir Lösungen, die heute und in Zukunft perfekt zu Ihnen passen.</p>
+                    <ul class='benefits-list'>
+                        <li>Erhöhte Sicherheit im Alltag</li>
+                        <li>Mehr Komfort und Lebensqualität</li>
+                        <li>Wertsteigerung Ihrer Immobilie</li>
+                    </ul>
+                    <a href='barrierefreies-bad/' class='btn btn-primary'>Mehr über barrierefreie Bäder</a>
+                </div>
+                <div class='split-image reveal-item'>
+                    <!-- KM_IMAGE_REF: assets/img/image_6.png -->
+                    <img src='assets/img/image_6.png' data-km-image='assets/img/image_6.png' alt='Präsentiert das hochwertige Endergebnis der barrierefreien Badsanierung durch die Günter John GmbH.' loading='lazy' sizes='(max-width: 768px) 100vw, 50vw'>
+                </div>
+            </div>
+        </section>
+
+        <section class='philosophy'>
+            <div class='container split-layout reverse'>
+                <div class='split-text reveal-item'>
+                    <span class='kicker'>Unsere Philosophie</span>
+                    <h2>Tradition, auf die Sie bauen können.</h2>
+                    <p>Seit über 50 Jahren steht der Name John in Vellmar für ehrliches Handwerk und absolute Zuverlässigkeit. Wir sind kein anonymer Konzern, sondern ein Familienbetrieb, der seine Kunden und ihre Bedürfnisse kennt. Unser Anspruch ist es, bei jedem Projekt – ob groß oder klein – eine Lösung zu schaffen, die über Jahre hinweg Freude bereitet.</p>
+                    <a href='ueber-uns/' class='btn btn-secondary'>Lernen Sie uns kennen</a>
+                </div>
+                <div class='split-image reveal-item'>
+                    <!-- KM_IMAGE_REF: assets/img/image_4.png -->
+                    <img src='assets/img/image_4.png' data-km-image='assets/img/image_4.png' alt='Vermittelt Authentizität, Handwerkskunst und die 50-jährige Tradition des Meisterbetriebs.' loading='lazy' sizes='(max-width: 768px) 100vw, 50vw'>
+                </div>
+            </div>
+        </section>
+
+        <section class='testimonials surface'>
+            <div class='container'>
+                <div class='section-header reveal-item'>
+                    <h2>Das sagen unsere Kunden</h2>
+                    <p>Ihre Zufriedenheit ist unser größter Ansporn. Hier einige Stimmen von Kunden aus Vellmar und Umgebung.</p>
+                </div>
+                <div class='testimonial-carousel-wrapper'>
+                    <div class='testimonial-carousel reveal-item'>
+                        <div class='testimonial-slide'>
+                            <blockquote>
+                                <p>“Die Beratung für unser neues Bad war hervorragend. Die Firma John hat alle unsere Wünsche berücksichtigt und eine tolle, barrierefreie Lösung geschaffen.”</p>
+                                <footer>A. Schmidt, Vellmar</footer>
+                            </blockquote>
+                        </div>
+                        <div class='testimonial-slide'>
+                            <blockquote>
+                                <p>“Schnell, zuverlässig und sehr kompetent. Unser Heizungsausfall wurde noch am selben Tag behoben. Absolut empfehlenswert!”</p>
+                                <footer>M. Berger, Kassel</footer>
+                            </blockquote>
+                        </div>
+                        <div class='testimonial-slide'>
+                            <blockquote>
+                                <p>“Von der Planung bis zur Umsetzung lief alles perfekt. Ein Handwerksbetrieb, bei dem man sich wirklich gut aufgehoben fühlt. Vielen Dank!”</p>
+                                <footer>K. Weber, Fuldatal</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class='carousel-controls'>
+                        <button class='prev' aria-label='Vorheriges Testimonial'>‹</button>
+                        <div class='dots'></div>
+                        <button class='next' aria-label='Nächstes Testimonial'>›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='faq'>
+            <div class='container'>
+                <div class='section-header reveal-item'>
+                    <h2>Häufig gestellte Fragen</h2>
+                    <p>Hier finden Sie schnelle Antworten auf die wichtigsten Fragen. Für alles Weitere stehen wir Ihnen persönlich zur Verfügung.</p>
+                </div>
+                <div class='faq-accordion reveal-item'>
+                    <div class='faq-item'>
+                        <button class='faq-question' aria-expanded='false'>In welchem Umkreis sind Sie tätig?</button>
+                        <div class='faq-answer' hidden>
+                            <p>Unser Kerngebiet ist Vellmar und die umliegenden Gemeinden sowie der gesamte Raum Kassel. Für größere Projekte sind wir nach Absprache auch überregional für Sie da.</p>
+                        </div>
+                    </div>
+                    <div class='faq-item'>
+                        <button class='faq-question' aria-expanded='false'>Was kostet eine Erstberatung?</button>
+                        <div class='faq-answer' hidden>
+                            <p>Eine erste telefonische Einschätzung und Beratung ist für Sie unverbindlich. Für eine detaillierte Vor-Ort-Analyse und Angebotserstellung erstellen wir ein transparentes Angebot, das bei Auftragserteilung oft verrechnet wird.</p>
+                        </div>
+                    </div>
+                    <div class='faq-item'>
+                        <button class='faq-question' aria-expanded='false'>Bieten Sie auch Wartungsverträge an?</button>
+                        <div class='faq-answer' hidden>
+                            <p>Ja, wir bieten für alle von uns installierten Heizungs- und Sanitäranlagen maßgeschneiderte Wartungsverträge an. Eine regelmäßige Wartung sichert die Langlebigkeit und Effizienz Ihrer Technik.</p>
+                        </div>
+                    </div>
+                     <div class='faq-item'>
+                        <button class='faq-question' aria-expanded='false'>Fördert der Staat den Umbau zum barrierefreien Bad?</button>
+                        <div class='faq-answer' hidden>
+                            <p>Ja, für den barrierefreien Umbau gibt es verschiedene Förderprogramme, zum Beispiel von der KfW-Bank oder den Pflegekassen. Wir beraten Sie gerne zu den aktuellen Möglichkeiten und unterstützen Sie bei der Antragstellung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='contact-local surface'>
+            <div class='container'>
+                <div class='contact-content reveal-item'>
+                    <h2>Wir sind für Sie in Vellmar da</h2>
+                    <p>Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Rufen Sie uns an oder schreiben Sie uns. Wir freuen uns darauf, von Ihnen zu hören.</p>
+                    <div class='contact-details'>
+                        <p><strong>Günter John GmbH</strong><br>Triftstraße 77-81<br>34246 Vellmar</p>
+                        <p><strong>Telefon:</strong> <a href='tel:0561821483'>0561 821483</a><br><strong>E-Mail:</strong> <a href='mailto:info@john-vellmar.de'>info@john-vellmar.de</a></p>
+                    </div>
+                    <a href='kontakt/' class='btn btn-primary'>Zum Kontaktformular</a>
+                </div>
+            </div>
+        </section>
+
+        <div class='gallery-lightbox' id='gallery-lightbox' hidden>
+            <button class='close-lightbox' aria-label='Galerie schließen'>&times;</button>
+            <button class='prev-lightbox' aria-label='Vorheriges Bild'>‹</button>
+            <img src='' alt='' class='lightbox-image'>
+            <button class='next-lightbox' aria-label='Nächstes Bild'>›</button>
+        </div>
+
+        <section class='gallery-section'>
+            <div class='container'>
+                 <div class='section-header reveal-item'>
+                    <h2>Weitere Einblicke</h2>
+                </div>
+                <div class='gallery-grid'>
+                    <!-- KM_IMAGE_REF: assets/img/image_5.png -->
+                    <img src='assets/img/image_5.png' data-km-image='assets/img/image_5.png' alt='Stellt den Ausgangszustand eines typischen Sanierungsprojekts dar, um den Kontrast zu verstärken.' loading='lazy' class='gallery-item' sizes='(max-width: 768px) 50vw, 33vw'>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class='site-footer'>
+        <div class='container'>
+            <div class='footer-grid'>
+                <div class='footer-col'>
+                    <h4>Günter John GmbH</h4>
+                    <p>Ihr Meisterbetrieb für Heizung, Sanitär und barrierefreies Wohnen in Vellmar und Umgebung.</p>
+                </div>
+                <div class='footer-col'>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href=''>Startseite</a></li>
+                        <li><a href='leistungen/'>Leistungen</a></li>
+                        <li><a href='barrierefreies-bad/'>Barrierefreies Bad</a></li>
+                        <li><a href='ueber-uns/'>Über Uns</a></li>
+                        <li><a href='karriere/'>Karriere</a></li>
+                        <li><a href='kontakt/'>Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class='footer-col'>
+                    <h4>Kontakt</h4>
+                    <address>
+                        Günter John GmbH<br>
+                        Triftstraße 77-81<br>
+                        34246 Vellmar<br>
+                        <a href='tel:0561821483'>0561 821483</a><br>
+                        <a href='mailto:info@john-vellmar.de'>info@john-vellmar.de</a>
+                    </address>
+                </div>
+                 <div class='footer-col'>
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href='impressum/'>Impressum</a></li>
+                        <li><a href='datenschutz/'>Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer-bottom'>
+                <p>&copy; 2024 Günter John GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class='cookie-banner' id='cookie-banner' hidden>
+        <div class='cookie-content'>
+            <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Indem Sie fortfahren, stimmen Sie unserer Verwendung von Cookies zu.</p>
+            <div class='cookie-buttons'>
+                <button id='accept-cookies' class='btn btn-primary'>Alle akzeptieren</button>
+                <button id='decline-cookies' class='btn btn-secondary'>Nur Notwendige</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class='sticky-cta' id='sticky-cta' hidden>
+        <a href='kontakt/' class='btn btn-primary'>Projekt anfragen</a>
+    </div>
+
+    <script src='assets/js/main.js'></script>
+</body>
+</html>
