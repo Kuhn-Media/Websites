@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5'>
+  <title>Kontakt & Anfahrt | Zahnarzt Berhnard</title>
+  <meta name='description' content='Nehmen Sie Kontakt mit der Praxis Zahnarzt Berhnard auf. Hier finden Sie unsere Adresse, Öffnungszeiten und ein einfaches Formular zur Online-Terminvereinbarung.'>
+  <link rel='stylesheet' href='../assets/css/styles.css'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Satoshi:wght@400;500;700&display=swap' rel='stylesheet'>
+</head>
+<body>
+  <a href='#main-content' class='skip-link'>Zum Hauptinhalt springen</a>
+
+  <header class='site-header' id='site-header'>
+    <div class='container header-container'>
+      <a href='../' class='logo' aria-label='Zahnarzt Berhnard - Zur Startseite'>Zahnarzt Berhnard</a>
+      <nav class='main-nav' aria-label='Hauptnavigation'>
+        <ul>
+          <li><a href='../'>Start</a></li>
+          <li><a href='../leistungen/'>Leistungen</a></li>
+          <li><a href='../praxis/'>Praxis</a></li>
+          <li><a href='./' class='active'>Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href='./' class='btn btn-primary header-cta'>Termin buchen</a>
+      <button class='mobile-nav-toggle' aria-controls='mobile-nav' aria-expanded='false' aria-label='Menü öffnen'>
+        <span class='line'></span>
+        <span class='line'></span>
+        <span class='line'></span>
+      </button>
+    </div>
+  </header>
+
+  <div class='mobile-nav-container' id='mobile-nav' aria-hidden='true'>
+    <nav class='mobile-nav' aria-label='Mobile Navigation'>
+      <ul>
+        <li><a href='../'>Start</a></li>
+        <li><a href='../leistungen/'>Leistungen</a></li>
+        <li><a href='../praxis/'>Praxis</a></li>
+        <li><a href='./' class='active'>Kontakt</a></li>
+      </ul>
+      <a href='./' class='btn btn-primary'>Termin buchen</a>
+    </nav>
+  </div>
+
+  <main id='main-content'>
+
+    <!-- === Hero === -->
+    <section class='hero-page'>
+      <div class='container reveal-up'>
+        <span class='kicker'>Kontakt</span>
+        <h1>Wir sind für Sie da.</h1>
+        <p class='subline'>Haben Sie Fragen, möchten Sie einen Termin vereinbaren oder eine Beratung? Zögern Sie nicht, uns zu kontaktieren. Wir freuen uns darauf, von Ihnen zu hören und Ihnen weiterzuhelfen.</p>
+      </div>
+    </section>
+
+    <!-- === Contact Section === -->
+    <section class='section-contact'>
+      <div class='container contact-grid'>
+        <div class='contact-form-wrapper surface-alt reveal-up'>
+          <h3>Buchen Sie Ihren Termin online</h3>
+          <p>Nutzen Sie unser Formular für eine unkomplizierte Terminanfrage. Füllen Sie einfach die Felder aus und wir melden uns schnellstmöglich bei Ihnen, um den Termin zu bestätigen.</p>
+          <form class='contact-form' action='#' method='POST'>
+            <div class='form-group'>
+              <label for='name'>Name</label>
+              <input type='text' id='name' name='name' required>
+            </div>
+            <div class='form-group'>
+              <label for='email'>E-Mail</label>
+              <input type='email' id='email' name='email' required>
+            </div>
+            <div class='form-group'>
+              <label for='phone'>Telefon (optional)</label>
+              <input type='tel' id='phone' name='phone'>
+            </div>
+            <div class='form-group'>
+              <label for='message'>Ihre Nachricht</label>
+              <textarea id='message' name='message' rows='5' required></textarea>
+            </div>
+            <div class='form-group-checkbox'>
+              <input type='checkbox' id='privacy' name='privacy' required>
+              <label for='privacy'>Ich habe die <a href='../datenschutz/'>Datenschutzerklärung</a> gelesen und bin damit einverstanden.</label>
+            </div>
+            <button type='submit' class='btn btn-primary'>Anfrage senden</button>
+          </form>
+        </div>
+        <div class='contact-details-wrapper reveal-up' style='--delay: 0.2s;'>
+          <h3>Unsere Kontaktdaten</h3>
+          <div class='contact-details-group'>
+            <h4>Adresse</h4>
+            <address>
+              Zahnarzt Berhnard<br>
+              Werderstraße 16<br>
+              Bitte ergänzen: PLZ Ort
+            </address>
+          </div>
+          <div class='contact-details-group'>
+            <h4>Kontakt</h4>
+            <p><a href='mailto:paulsaitest@gmail.com'>paulsaitest@gmail.com</a></p>
+          </div>
+          <div class='contact-details-group'>
+            <h4>Öffnungszeiten</h4>
+            <ul class='opening-hours'>
+              <li><span>Montag</span><span>08:00 – 18:00 Uhr</span></li>
+              <li><span>Dienstag</span><span>08:00 – 18:00 Uhr</span></li>
+              <li><span>Mittwoch</span><span>08:00 – 14:00 Uhr</span></li>
+              <li><span>Donnerstag</span><span>08:00 – 18:00 Uhr</span></li>
+              <li><span>Freitag</span><span>08:00 – 13:00 Uhr</span></li>
+              <li><span>und nach Vereinbarung</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Map === -->
+    <section class='section-map'>
+        <div class='map-placeholder'>
+            <p>Hier wird eine interaktive Karte angezeigt.</p>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class='site-footer-main'>
+    <div class='container footer-grid'>
+      <div class='footer-brand'>
+        <h4>Zahnarzt Berhnard</h4>
+        <p>Moderne Zahnheilkunde für Ihr schönstes Lächeln.</p>
+      </div>
+      <div class='footer-nav'>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href='../'>Start</a></li>
+          <li><a href='../leistungen/'>Leistungen</a></li>
+          <li><a href='../praxis/'>Praxis</a></li>
+          <li><a href='./'>Kontakt</a></li>
+        </ul>
+      </div>
+      <div class='footer-contact'>
+        <h4>Kontakt</h4>
+        <address>
+          Zahnarzt Berhnard<br>
+          Werderstraße 16<br>
+          Bitte ergänzen: PLZ Ort
+        </address>
+        <a href='mailto:paulsaitest@gmail.com'>paulsaitest@gmail.com</a>
+      </div>
+      <div class='footer-legal'>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href='../impressum/'>Impressum</a></li>
+          <li><a href='../datenschutz/'>Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='container footer-bottom'>
+      <p>&copy; 2024 Zahnarzt Berhnard. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src='../assets/js/main.js'></script>
+</body>
+</html>
