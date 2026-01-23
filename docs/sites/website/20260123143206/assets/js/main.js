@@ -1,0 +1,2 @@
+// JavaScript-Datei ist leer, da keine Funktionalität aufgrund fehlender Daten implementiert werden kann.
+console.error('Fehler: Initialisierungsdaten für die Website fehlen. Das empfangene JSON-Objekt war leer oder ungültig.');
