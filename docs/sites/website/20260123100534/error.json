@@ -1,0 +1,22 @@
+{
+  "error": "Fatal Error: Input data is missing or empty.",
+  "message": "Assemble Agent received an empty input object. The 'briefing', 'plan', 'copy', 'design', and 'images' properties were all empty. A website cannot be generated without the necessary data. This indicates a critical failure in the preceding pipeline steps.",
+  "required_data_missing": [
+    "briefing",
+    "plan",
+    "copy",
+    "design",
+    "images"
+  ],
+  "recommendation": "Please check the logs and outputs of the upstream agents (e.g., Briefing Agent, Plan Agent, Copy Agent, Design Agent) to identify the source of the failure. The process cannot continue until valid data is provided.",
+  "received_debug_info": {
+    "notes": [
+      "Briefing nicht erkannt → prüfe, ob Normalize Briefing wirklich im Merge hängt.",
+      "Plan nicht erkannt → Plan-Agent Output / Merge prüfen.",
+      "Design nicht erkannt → Design-Agent Output / Merge prüfen.",
+      "Copy nicht erkannt → Copy-Agent Output / Merge prüfen.",
+      "images.manifest leer → Assemble darf keine Bildpfade erfinden.",
+      "site snapshot fehlt → ok, aber dann weniger Kontext aus alter Website."
+    ]
+  }
+}
