@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "error.json",
+      "mime": "application/json",
+      "content": "{\n  \"error\": \"Fatal Error: Input data is missing or empty.\",\n  \"message\": \"Assemble Agent received an empty input object. The 'briefing', 'plan', 'copy', 'design', and 'images' properties were all empty. A website cannot be generated without the necessary data. This indicates a critical failure in the preceding pipeline steps.\",\n  \"required_data_missing\": [\n    \"briefing\",\n    \"plan\",\n    \"copy\",\n    \"design\",\n    \"images\"\n  ],\n  \"recommendation\": \"Please check the logs and outputs of the upstream agents (e.g., Briefing Agent, Plan Agent, Copy Agent, Design Agent) to identify the source of the failure. The process cannot continue until valid data is provided.\",\n  \"received_debug_info\": {\n    \"notes\": [\n      \"Briefing nicht erkannt → prüfe, ob Normalize Briefing wirklich im Merge hängt.\",\n      \"Plan nicht erkannt → Plan-Agent Output / Merge prüfen.\",\n      \"Design nicht erkannt → Design-Agent Output / Merge prüfen.\",\n      \"Copy nicht erkannt → Copy-Agent Output / Merge prüfen.\",\n      \"images.manifest leer → Assemble darf keine Bildpfade erfinden.\",\n      \"site snapshot fehlt → ok, aber dann weniger Kontext aus alter Website.\"\n    ]\n  }\n}"
+    }
+  ],
+  "owner": "Kuhn-Media",
+  "repo": "Websites",
+  "branch": "main",
+  "baseDir": "docs/sites",
+  "clientSlug": "website",
+  "runId": "20260123100534",
+  "liveDir": "docs/sites/website",
+  "versionDir": "docs/sites/website/20260123100534",
+  "__index": 0
+}
