@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "error.json",
+      "mime": "application/json",
+      "content": "{\"error\": \"Assemble Agent received empty or invalid inputs. Cannot build website without briefing, plan, copy, design, and images. All critical data fields were empty.\"}"
+    }
+  ],
+  "owner": "Kuhn-Media",
+  "repo": "Websites",
+  "branch": "main",
+  "baseDir": "docs/sites",
+  "clientSlug": "website",
+  "runId": "20260123111948",
+  "liveDir": "docs/sites/website",
+  "versionDir": "docs/sites/website/20260123111948",
+  "__index": 0
+}
