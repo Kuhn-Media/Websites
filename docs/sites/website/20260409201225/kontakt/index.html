@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=5'>
+    <title>Kontakt - Assemble Agentur</title>
+    <meta name='description' content='Nehmen Sie Kontakt mit uns auf. Wir freuen uns darauf, von Ihrer Vision zu hören und Ihr Projekt zu besprechen.'>
+    <link rel='stylesheet' href='../assets/css/styles.css'>
+</head>
+<body>
+    <a href='#main-content' class='skip-link'>Zum Hauptinhalt springen</a>
+
+    <header id='main-header' class='main-header'>
+        <div class='container header-container'>
+            <a href='../' class='logo'>Assemble</a>
+            <nav class='main-nav'>
+                <ul>
+                    <li><a href='../'>Home</a></li>
+                    <li><a href='../leistungen/'>Leistungen</a></li>
+                    <li><a href='../agentur/'>Agentur</a></li>
+                    <li><a href='../projekte/'>Projekte</a></li>
+                    <li><a href='' class='active'>Kontakt</a></li>
+                </ul>
+            </nav>
+            <button id='mobile-menu-toggle' class='mobile-menu-toggle' aria-label='Menü öffnen' aria-expanded='false'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div id='mobile-menu' class='mobile-menu'>
+        <nav>
+            <ul>
+                <li><a href='../'>Home</a></li>
+                <li><a href='../leistungen/'>Leistungen</a></li>
+                <li><a href='../agentur/'>Agentur</a></li>
+                <li><a href='../projekte/'>Projekte</a></li>
+                <li><a href=''>Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id='main-content'>
+        <section class='hero-subpage'>
+            <div class='container reveal-item'>
+                <span class='eyebrow'>Kontakt</span>
+                <h1>Lassen Sie uns sprechen.</h1>
+                <p class='lead'>Wir sind gespannt auf Ihre Ideen und Herausforderungen. Füllen Sie das Formular aus oder finden Sie unsere Kontaktdaten unten.</p>
+            </div>
+        </section>
+
+        <div class='signature-divider'></div>
+
+        <section class='contact-section section-padding'>
+            <div class='container grid-2-col-asym'>
+                <div class='contact-form-wrapper reveal-item'>
+                    <h3>Schreiben Sie uns eine Nachricht</h3>
+                    <form class='contact-form' action='#' method='POST'>
+                        <div class='form-group'>
+                            <label for='name'>Name</label>
+                            <input type='text' id='name' name='name' required>
+                        </div>
+                        <div class='form-group'>
+                            <label for='email'>E-Mail</label>
+                            <input type='email' id='email' name='email' required>
+                        </div>
+                        <div class='form-group'>
+                            <label for='message'>Ihre Nachricht</label>
+                            <textarea id='message' name='message' rows='5' required></textarea>
+                        </div>
+                        <div class='form-group-checkbox'>
+                            <input type='checkbox' id='privacy' name='privacy' required>
+                            <label for='privacy'>Ich habe die <a href='../datenschutz/'>Datenschutzerklärung</a> gelesen und stimme ihr zu.</label>
+                        </div>
+                        <button type='submit' class='btn btn-primary'>Nachricht senden</button>
+                    </form>
+                </div>
+                <div class='contact-details-wrapper reveal-item' data-delay='150'>
+                    <div class='contact-details-image'>
+                        <!-- KM_IMAGE_REF: assets/img/image_4.png -->
+                        <img src='../assets/img/image_4.png' data-km-image='assets/img/image_4.png' alt='Einladender Arbeitsplatz, bereit für neue Projekte.' loading='lazy' sizes='(max-width: 768px) 100vw, 40vw'>
+                    </div>
+                    <h3>Unsere Kontaktdaten</h3>
+                    <div class='contact-info'>
+                        <h4>Adresse</h4>
+                        <p>Bitte ergänzen: [Firmenname]</p>
+                        <p>Bitte ergänzen: [Straße, Hausnummer]</p>
+                        <p>Bitte ergänzen: [PLZ, Ort]</p>
+                        <h4>E-Mail</h4>
+                        <p>Bitte ergänzen: [E-Mail-Adresse]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class='main-footer section-padding'>
+        <div class='container'>
+            <div class='footer-grid'>
+                <div class='footer-about'>
+                    <h4>Assemble Agentur</h4>
+                    <p>Digitale Erlebnisse mit Präzision und Eleganz.</p>
+                </div>
+                <div class='footer-links'>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href='../'>Home</a></li>
+                        <li><a href='../leistungen/'>Leistungen</a></li>
+                        <li><a href='../agentur/'>Agentur</a></li>
+                        <li><a href='../projekte/'>Projekte</a></li>
+                        <li><a href=''>Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class='footer-legal'>
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href='../impressum/'>Impressum</a></li>
+                        <li><a href='../datenschutz/'>Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class='footer-contact'>
+                    <h4>Kontakt</h4>
+                    <p>Bitte ergänzen: [Straße, Hausnummer]</p>
+                    <p>Bitte ergänzen: [PLZ, Ort]</p>
+                    <p>E-Mail: Bitte ergänzen: [E-Mail-Adresse]</p>
+                </div>
+            </div>
+            <div class='footer-bottom'>
+                <p>&copy; 2024 Assemble Agentur. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id='cookie-banner' class='cookie-banner'>
+        <div class='container cookie-container'>
+            <p>Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern. <a href='../datenschutz/'>Mehr erfahren</a></p>
+            <div class='button-group'>
+                <button id='cookie-accept' class='btn btn-primary btn-sm'>Akzeptieren</button>
+                <button id='cookie-decline' class='btn btn-outline btn-sm'>Ablehnen</button>
+            </div>
+        </div>
+    </div>
+
+    <div id='km-lightbox' class='km-lightbox' role='dialog' aria-modal='true' aria-hidden='true'>
+        <div class='lightbox-backdrop'></div>
+        <div class='lightbox-content'>
+            <button class='lightbox-close' aria-label='Schließen'>&times;</button>
+            <button class='lightbox-prev' aria-label='Voriges Bild'>&#10094;</button>
+            <img src='' alt='Detailansicht des Bildes'>
+            <button class='lightbox-next' aria-label='Nächstes Bild'>&#10095;</button>
+        </div>
+    </div>
+
+    <div id='sticky-cta' class='sticky-cta'>
+        <a href='../kontakt/' class='btn btn-primary'>Projekt anfragen</a>
+    </div>
+
+    <script src='../assets/js/main.js'></script>
+
+
+<style id='km-chat-fix'>
+/*KM_CHAT_SANITIZED*/
+/* ensure chat never blocks the whole page */
+.n8n-chat__overlay, .n8n-chat-overlay, .n8n-chat-widget__overlay, .n8n-chat-widget-overlay {
+  pointer-events: none !important;
+  background: transparent !important;
+}
+.n8n-chat__overlay * , .n8n-chat-overlay * , .n8n-chat-widget__overlay * , .n8n-chat-widget-overlay * {
+  pointer-events: none !important;
+}
+/* keep the actual launcher/window clickable */
+.n8n-chat, .n8n-chat-widget, .n8n-chat-widget * {
+  pointer-events: auto;
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<style id="km-chat-theme">
+  :root {
+    --chat--font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --chat--color-primary: #f97316;
+    --chat--color-primary-shade-50: #fa8c40;
+    --chat--color-secondary: #facc15;
+    --chat--color-light: #f8fafc;
+    --chat--color-dark: #050a14;
+
+    --chat--window--width: min(420px, 100vw);
+    --chat--window--height: 74vh;
+    --chat--border-radius: 22px;
+
+    --chat--header--background: transparent;
+    --chat--header--color: #f8fafc;
+    --chat--header--padding: 0.9rem 1.1rem;
+    --chat--heading--font-size: 1rem;
+    --chat--subtitle--font-size: 0.78rem;
+
+    --chat--message--bot--background: #f97b24;
+    --chat--message--bot--color: #0b1220;
+    --chat--message--user--background: #0b1220;
+    --chat--message--user--color: #e5e7eb;
+
+    --chat--launcher--background: #f97316;
+    --chat--launcher--color: #0b1220;
+    --chat--launcher--border-radius: 999px;
+  }
+
+  @keyframes km-widget-fade-up {
+    from { opacity: 0; transform: translateY(14px) scale(0.985); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes km-launcher-pulse {
+    0%   { box-shadow: 0 0 0 0 #893f0c; transform: translateY(0); }
+    60%  { box-shadow: 0 0 0 14px rgba(0,0,0,0); transform: translateY(-1px); }
+    100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); transform: translateY(0); }
+  }
+
+  /* Window: modern, ruhig, kein "klobiger Kasten" */
+  .chat-window {
+    position: relative;
+    border-radius: var(--chat--border-radius);
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top left, rgba(255,255,255,0.10), transparent 60%),
+      radial-gradient(circle at 120% 0%, rgba(255,255,255,0.07), transparent 55%),
+      rgba(8, 15, 28, 0.94);
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow:
+      0 24px 70px rgba(0,0,0,0.45),
+      0 10px 28px rgba(0,0,0,0.30);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: km-widget-fade-up 240ms cubic-bezier(.2,.8,.2,1);
+  }
+
+  /* Header: Gradient + feine Linie */
+  .chat-window header {
+    background: linear-gradient(135deg, #422415 0%, #f99216 45%, #fbd231 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+  }
+
+  /* Messages: mehr Luft, weniger "billig" */
+  .chat-messages {
+    padding: 0.85rem 0.85rem 0.95rem;
+  }
+  .chat-message {
+    border-radius: 18px !important;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    box-shadow: none;
+  }
+  .chat-message.chat-message--bot {
+    border: 1px solid rgba(255,255,255,0.10);
+  }
+  .chat-message.chat-message--user {
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* Input: clean, modern, better focus */
+  .chat-input {
+    padding: 0.75rem 0.75rem 0.85rem;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    background: rgba(6, 10, 18, 0.72);
+    backdrop-filter: blur(8px);
+  }
+  .chat-input textarea,
+  .chat-input input {
+    border-radius: 14px !important;
+    border: 1px solid rgba(255,255,255,0.14) !important;
+    background: rgba(255,255,255,0.06) !important;
+    color: #e5e7eb !important;
+    outline: none !important;
+  }
+  .chat-input textarea:focus,
+  .chat-input input:focus {
+    border-color: #fb9650 !important;
+    box-shadow: 0 0 0 4px #572808 !important;
+  }
+
+  /* Buttons / Send */
+  .chat-input button {
+    border-radius: 14px !important;
+    background: #f97316 !important;
+    color: #0b1220 !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.28);
+    transition: transform 140ms ease, filter 140ms ease;
+  }
+  .chat-input button:hover { transform: translateY(-1px); filter: brightness(1.03); }
+
+  /* Launcher: weniger "altbacken" + optionales Label */
+  .chat-launcher {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    box-shadow: 0 18px 44px rgba(0,0,0,0.38);
+    animation: km-launcher-pulse 3.2s ease-in-out infinite;
+  }
+  .chat-launcher:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+  }
+  .chat-launcher::before {
+    content: "Chat mit Ihr Unternehmen";
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    transform: translateY(-4px);
+    background: rgba(8, 15, 28, 0.96);
+    color: #e5e7eb;
+    padding: 0.22rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    border: 1px solid rgba(255,255,255,0.14);
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .chat-launcher::before { opacity: 0.9; font-size: 0.64rem; right: 4px; }
+  }
+
+  /* Mobile: App-Feeling */
+  @media (max-width: 768px) {
+    .chat-window {
+      width: 100vw !important;
+      max-width: 100vw !important;
+      height: calc(100vh - 82px) !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      border-radius: 20px 20px 0 0;
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .chat-window, .chat-launcher { animation: none !important; }
+    .chat-input button { transition: none !important; }
+  }
+</style>
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://n8n.srv1000937.hstgr.cloud/webhook/km-chat/chat',
+    webhookConfig: { method: 'POST', headers: {} },
+    mode: 'window',
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    loadPreviousSession: true,
+    metadata: { tenantId: 'km-example' },
+    showWelcomeScreen: false,
+    defaultLanguage: 'de',
+    initialMessages: [
+      'Willkommen bei Ihr Unternehmen! 👋',
+      'Wie können wir Ihnen konkret weiterhelfen?'
+    ],
+    i18n: {
+      de: {
+        title: 'Chat mit Ihr Unternehmen',
+        subtitle: 'Schnelle, persönliche Antworten zu Leistungen, Terminen & Angeboten.',
+        footer: '',
+        getStarted: 'Chat starten',
+        inputPlaceholder: 'Kurz Ihre Frage hier eintippen …'
+      }
+    }
+  });
+</script>
+</body>
+</html>
